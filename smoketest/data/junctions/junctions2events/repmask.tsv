@@ -1,0 +1,6 @@
+#TYPE	UCSC-REPMASK
+#GENERATED_AT	2011-Feb-15 09:58
+#GENOME_REFERENCE	NCBI build 36
+
+>chromosome	begin	end	repName	repFamily	divergence	strand
+chr2	10000	11000	L1HS	L1	3.0	-

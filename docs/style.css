@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font: 13px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+    background: #E2EBED;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0 18px 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 724px;
+    position: relative;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+#supportingText {
+    margin: 10px 243px 10px 0;
+}
+
+#sidebar {
+    position: absolute;
+    left: 514px;
+    width: 210px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar h3 {
+    height: 15px;
+    margin: 15px 0 5px 0px;
+}
+
+#img_logo {
+    border-width: 0;
+}

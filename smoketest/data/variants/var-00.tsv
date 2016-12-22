@@ -1,0 +1,185 @@
+#ASSEMBLY_ID	asmId
+#TYPE	VAR-ANNOTATION
+#SOFTWARE_VERSION	1.5.0
+
+>locus	ploidy	haplotype	chromosome	begin	end	varType	reference	alleleSeq	totalScore	hapLink	xRef
+1	2	1	chr1	0	1	no-call	T	?			
+1	2	1	chr1	1	30	ref	TTAACAGAAAAATGAGCATGGAAAGGTAA	TTAACAGAAAAATGAGCATGGAAAGGTAA	35		
+1	2	2	chr1	0	30	no-call	TTTAACAGAAAAATGAGCATGGAAAGGTAA	?			
+2	2	all	chr1	30	85	ref	=	=			
+3	2	1	chr1	85	85	ref			48	1	
+3	2	2	chr1	85	85	ins		G	62	2	
+4	2	all	chr1	85	86	ref	=	=			
+5	2	1	chr1	86	87	no-call-rc	C	N	121	1	
+5	2	2	chr1	86	87	ref	C	C	121	2	
+6	2	all	chr1	87	320	ref	=	=			
+7	2	1	chr1	320	323	ref	ATT	ATT	122		
+7	2	1	chr1	323	324	snp	T	C	63		
+7	2	1	chr1	324	328	ref	TGGT	TGGT	116		
+7	2	2	chr1	320	328	no-call	ATTTTGGT	?			
+8	2	all	chr1	328	671	ref	=	=			
+9	2	1	chr1	671	671	ref			42		
+9	2	2	chr1	671	671	no-call		?			
+10	2	all	chr1	671	730	ref	=	=			
+11	2	1	chr1	730	731	ref	T	T	93		
+11	2	1	chr1	731	732	no-call	T	?			
+11	2	2	chr1	730	732	no-call	TT	?			
+12	2	all	chr1	732	1203	ref	=	=			
+13	2	1	chr1	1203	1204	snp	C	T	101		
+13	2	2	chr1	1203	1204	snp	C	T	121		
+14	2	all	chr1	1204	1874	ref	=	=			
+15	2	1	chr1	1874	1875	snp	G	C	120		
+15	2	2	chr1	1874	1875	ref	G	G	44		
+16	2	all	chr1	1875	2335	ref	=	=			
+17	2	1	chr1	2335	2336	snp	G	A	120		
+17	2	2	chr1	2335	2336	snp	G	A	120		
+18	2	all	chr1	2336	3262	ref	=	=			
+19	2	1	chr1	3262	3263	del	T		141		
+19	2	2	chr1	3262	3263	ref	T	T	141		
+20	2	all	chr1	3263	3463	ref	=	=			
+21	2	1	chr1	3463	3464	ref	C	C	217		
+21	2	2	chr1	3463	3464	snp	C	T	217		
+22	2	all	chr1	3464	5081	ref	=	=			
+23	2	1	chr1	5081	5082	snp	G	A	181		
+23	2	2	chr1	5081	5082	ref	G	G	181		
+24	2	all	chr1	5082	6200	ref	=	=			
+25	2	1	chr1	6200	6200	ins		GA	82		
+25	2	2	chr1	6200	6200	ins		GA	120		
+26	2	all	chr1	6200	6596	ref	=	=			
+27	2	1	chr1	6596	6597	ref	A	A	105		
+27	2	2	chr1	6596	6597	snp	A	G	120		
+28	2	all	chr1	6597	6710	ref	=	=			
+29	2	1	chr1	6710	6711	snp	T	C	46	555	
+29	2	2	chr1	6710	6711	ref	T	T	55	556	
+30	2	all	chr1	6711	6712	ref	=	=			
+31	2	1	chr1	6712	6714	ref	TA	TA	27	555	
+31	2	2	chr1	6712	6714	sub	TA	CA	45	556	
+32	2	all	chr1	6714	7000	ref	=	=			
+4316	2	1	chr2	0	0	no-call		?			
+4316	2	1	chr2	0	16	ref	ATCACTAACCATGTAA	ATCACTAACCATGTAA	24		
+4316	2	2	chr2	0	16	no-call	ATCACTAACCATGTAA	?			
+4317	2	all	chr2	16	83	ref	=	=			
+4318	2	1	chr2	83	83	no-call		?		461	
+4318	2	2	chr2	83	83	ref			40	462	
+4319	2	all	chr2	83	85	ref	=	=			
+4320	2	1	chr2	85	86	no-call-rc	C	N	61	461	
+4320	2	2	chr2	85	86	ref	C	C	53	462	
+4321	2	all	chr2	86	91	ref	=	=			
+4322	2	1	chr2	91	96	no-call	CTCAT	?		461	
+4322	2	2	chr2	91	96	ref	CTCAT	CTCAT	61	462	
+4323	2	all	chr2	96	116	ref	=	=			
+4324	2	1	chr2	116	117	ref	A	A	39		
+4324	2	2	chr2	116	117	no-call-rc	A	N	61		
+4325	2	all	chr2	117	761	ref	=	=			
+4326	2	1	chr2	761	762	snp	C	A	117		
+4326	2	2	chr2	761	762	ref	C	C	117		
+4327	2	all	chr2	762	1064	ref	=	=			
+4328	2	1	chr2	1064	1065	snp	G	C	114		
+4328	2	2	chr2	1064	1065	ref	G	G	114		
+4329	2	all	chr2	1065	1788	ref	=	=			
+4330	2	1	chr2	1788	1789	snp	T	A	54		
+4330	2	2	chr2	1788	1789	snp	T	A	120		
+4331	2	all	chr2	1789	2622	ref	=	=			
+4332	2	1	chr2	2622	2623	ref	C	C	118		
+4332	2	2	chr2	2622	2623	snp	C	T	126		
+4333	2	all	chr2	2623	2809	ref	=	=			
+4334	2	1	chr2	2809	2809	ins		A	80		
+4334	2	2	chr2	2809	2809	ins		A	118		
+4335	2	all	chr2	2809	3079	ref	=	=			
+4336	2	1	chr2	3079	3080	snp	A	G	120		
+4336	2	2	chr2	3079	3080	snp	A	G	120		
+4337	2	all	chr2	3080	3266	ref	=	=			
+4338	2	all	chr2	3266	3268	no-call	=	?			
+4339	2	all	chr2	3268	3967	ref	=	=			
+4340	2	1	chr2	3967	3968	ref	C	C	157		
+4340	2	2	chr2	3967	3968	snp	C	T	157		
+4341	2	all	chr2	3968	5008	ref	=	=			
+4342	2	1	chr2	5008	5009	snp	G	A	128		
+4342	2	2	chr2	5008	5009	ref	G	G	112		
+4343	2	all	chr2	5009	5174	ref	=	=			
+4344	2	1	chr2	5174	5175	snp	T	C	122		
+4344	2	2	chr2	5174	5175	ref	T	T	122		
+4345	2	all	chr2	5175	5673	ref	=	=			
+4346	2	1	chr2	5673	5673	ref			26		
+4346	2	2	chr2	5673	5673	no-call		?			
+4347	2	all	chr2	5673	6127	ref	=	=			
+4348	2	1	chr2	6127	6128	snp	T	A	85		
+4348	2	2	chr2	6127	6128	snp	T	A	125		
+4349	2	all	chr2	6128	7372	ref	=	=			
+4350	2	1	chr2	7372	7373	ref	C	C	126		
+4350	2	2	chr2	7372	7373	snp	C	T	117		
+4351	2	all	chr2	7373	7604	ref	=	=			
+4352	2	1	chr2	7604	7605	snp	T	C	127		
+4352	2	2	chr2	7604	7605	ref	T	T	127		
+4353	2	all	chr2	7605	7709	ref	=	=			
+4354	2	1	chr2	7709	7710	ref	A	A	120	463	
+4354	2	2	chr2	7709	7710	snp	A	G	120	464	
+4355	2	all	chr2	7710	7742	ref	=	=			
+4356	2	1	chr2	7742	7743	ref	T	T	40	463	
+4356	2	2	chr2	7742	7743	no-call-rc	T	N	120	464	
+4357	2	all	chr2	7743	8842	ref	=	=			
+4358	2	1	chr2	8842	8843	snp	T	C	121		
+4358	2	2	chr2	8842	8843	ref	T	T	121		
+4359	2	all	chr2	8843	9373	ref	=	=			
+4360	2	1	chr2	9373	9374	ref	A	A	127		
+4360	2	2	chr2	9373	9374	snp	A	G	127		
+4361	2	all	chr2	9374	9838	ref	=	=			
+4362	2	1	chr2	9838	9840	ref	AG	AG	106		
+4362	2	1	chr2	9840	9841	no-call-rc	G	N	120		
+4362	2	1	chr2	9841	9846	ref	GAAAT	GAAAT	61		
+4362	2	1	chr2	9846	9850	no-call	TGAG	?			
+4362	2	2	chr2	9838	9850	no-call	AGGGAAATTGAG	?			
+4363	?	all	chr2	9850	11500	no-ref	=	?			
+4364	2	1	chr2	11500	11500	no-call		?			
+4364	2	1	chr2	11500	11512	ref	AAGAGTGAGAGG	AAGAGTGAGAGG	20		
+4364	2	2	chr2	11500	11512	no-call	AAGAGTGAGAGG	?			
+4365	2	all	chr2	11512	11667	ref	=	=			
+4366	2	1	chr2	11667	11669	ref	AA	AA	134		
+4366	2	2	chr2	11667	11669	no-call	AA	?			
+4367	2	all	chr2	11669	12457	ref	=	=			
+4368	2	1	chr2	12457	12458	ref	C	C	124		
+4368	2	2	chr2	12457	12458	snp	C	T	124		
+4369	2	all	chr2	12458	13029	ref	=	=			
+4370	2	1	chr2	13029	13030	snp	T	C	121		
+4370	2	2	chr2	13029	13030	ref	T	T	121		
+4371	2	all	chr2	13030	13951	ref	=	=			
+4372	2	1	chr2	13951	13952	snp	A	C	347		
+4372	2	2	chr2	13951	13952	snp	A	C	347		
+4373	2	all	chr2	13952	14300	ref	=	=			
+5069	1	all	chrM	0	6	no-call	=	?			
+5070	1	all	chrM	6	363	ref	=	=			
+5071	1	1	chrM	363	363	ins		A	87		
+5072	1	all	chrM	363	954	ref	=	=			
+5073	1	1	chrM	954	955	snp	T	C	146		
+5074	1	all	chrM	955	3385	ref	=	=			
+5075	1	1	chrM	3385	3386	del	A		185		
+5076	1	all	chrM	3386	3403	ref	=	=			
+5077	1	1	chrM	3403	3406	sub	CTA	TTG	185		
+5078	1	all	chrM	3406	3659	ref	=	=			
+5079	1	1	chrM	3659	3659	ins		T	311		
+5080	1	all	chrM	3659	4096	ref	=	=			
+5081	1	1	chrM	4096	4097	snp	C	G	287		
+5082	1	all	chrM	4097	4567	ref	=	=			
+5083	1	1	chrM	4567	4568	snp	T	G	152		
+5084	1	all	chrM	4568	4923	ref	=	=			
+5085	1	1	chrM	4923	4924	snp	A	G	312		
+5086	1	all	chrM	4924	5993	ref	=	=			
+5087	1	1	chrM	5993	5994	snp	C	G	157		
+5088	1	all	chrM	5994	10268	ref	=	=			
+5089	1	1	chrM	10268	10269	snp	C	T	220		
+5090	1	all	chrM	10269	10337	ref	=	=			
+5091	1	1	chrM	10337	10343	del	ATTAAT		207		
+5092	1	all	chrM	10343	10355	ref	=	=			
+5093	1	1	chrM	10355	10356	snp	C	A	207		
+5094	1	all	chrM	10356	10601	ref	=	=			
+5095	1	1	chrM	10601	10602	snp	T	A	186		
+5096	1	all	chrM	10602	10791	ref	=	=			
+5097	1	1	chrM	10791	10792	snp	T	C	125		
+5098	1	all	chrM	10792	13118	ref	=	=			
+5099	1	1	chrM	13118	13119	snp	T	C	278		
+5100	1	all	chrM	13119	13465	ref	=	=			
+5101	1	1	chrM	13465	13466	snp	A	G	221		
+5102	1	all	chrM	13466	14928	ref	=	=			
+5103	1	1	chrM	14928	14929	snp	C	A	229		
+5104	1	all	chrM	14929	16565	ref	=	=			
+5105	1	all	chrM	16565	16571	no-call	=	?			

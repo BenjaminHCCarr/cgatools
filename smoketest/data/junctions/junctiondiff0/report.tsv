@@ -1,0 +1,9 @@
+#GENERATED_BY	cgatools
+#GENERATED_AT	2011-Aug-05 15:12:19.913824
+#CGATOOLS_VERSION	0.0.0
+#FORMAT_VERSION	1.8
+#TYPE	JUNCTIONDIFF_REPORT
+
+>fileId	inputJunctions	filteredJunctions	incompatible	filteredIncompatible	compatible	scoreThreshold	maxDistance	minDelLength
+65	524	187	90	82	97	10	200	500
+66	105	105	11	0	94	0	200	500

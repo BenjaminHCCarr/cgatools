@@ -1,0 +1,14 @@
+SimpleClassification	Count	Pct
+identical	44	95.65%
+consistent	2	4.35%
+onlyA	0	0.00%
+onlyB	0	0.00%
+mismatch	0	0.00%
+phase-mismatch	0	0.00%
+ploidy-mismatch	0	0.00%
+
+Classification	Count	Pct
+ref-identical;alt-identical	18	39.13%
+alt-identical	17	36.96%
+alt-identical;alt-identical	9	19.57%
+alt-identical;ref-consistent	2	4.35%

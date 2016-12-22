@@ -1,0 +1,5 @@
+RsVal	DbSnpSnps	Chromosome	Offset0Based	GenotypesStrand	Genotypes
+rs123	C/T	chr1	0	+	TT
+rs123	C/T	chr1	20	-	GG
+rs123	C/T	chr1	84	+	GG
+rs123	C/T	chr1	85	-	GAAA

@@ -1,0 +1,60 @@
+Locus stats for file A by pct of LocusClassification
+File	LocusClassification	ref-identical;alt-identical	alt-identical	alt-identical;alt-identical	alt-identical;ref-consistent	other	total
+A	hap-del	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+A	hap-ins	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+A	hap-snp	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+A	hap-sub	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+A	het-del	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	het-ins	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	het-snp	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	het-sub	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	hom-ins	0.00%	0.00%	100.00%	0.00%	0.00%	100.00%
+A	hom-snp	0.00%	0.00%	100.00%	0.00%	0.00%	100.00%
+A	no-call-snp	0.00%	0.00%	0.00%	100.00%	0.00%	100.00%
+A	total	44.68%	36.17%	17.02%	2.13%	0.00%	100.00%
+
+Locus stats for file B by pct of LocusClassification
+File	LocusClassification	ref-identical;alt-identical	alt-identical	alt-identical;alt-identical	alt-identical;ref-consistent	other	total
+B	hap-del	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+B	hap-ins	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+B	hap-snp	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+B	hap-sub	0.00%	100.00%	0.00%	0.00%	0.00%	100.00%
+B	het-del	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	het-ins	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	het-snp	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	het-sub	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	hom-ins	0.00%	0.00%	100.00%	0.00%	0.00%	100.00%
+B	hom-snp	0.00%	0.00%	100.00%	0.00%	0.00%	100.00%
+B	no-call-snp	0.00%	0.00%	0.00%	100.00%	0.00%	100.00%
+B	total	44.68%	36.17%	17.02%	2.13%	0.00%	100.00%
+
+Locus stats for file A by count
+File	LocusClassification	ref-identical;alt-identical	alt-identical	alt-identical;alt-identical	alt-identical;ref-consistent	other	total
+A	hap-del	0	2	0	0	0	2
+A	hap-ins	0	2	0	0	0	2
+A	hap-snp	0	12	0	0	0	12
+A	hap-sub	0	1	0	0	0	1
+A	het-del	1	0	0	0	0	1
+A	het-ins	1	0	0	0	0	1
+A	het-snp	18	0	0	0	0	18
+A	het-sub	1	0	0	0	0	1
+A	hom-ins	0	0	2	0	0	2
+A	hom-snp	0	0	6	0	0	6
+A	no-call-snp	0	0	0	1	0	1
+A	total	21	17	8	1	0	47
+
+Locus stats for file B by count
+File	LocusClassification	ref-identical;alt-identical	alt-identical	alt-identical;alt-identical	alt-identical;ref-consistent	other	total
+B	hap-del	0	2	0	0	0	2
+B	hap-ins	0	2	0	0	0	2
+B	hap-snp	0	12	0	0	0	12
+B	hap-sub	0	1	0	0	0	1
+B	het-del	1	0	0	0	0	1
+B	het-ins	1	0	0	0	0	1
+B	het-snp	18	0	0	0	0	18
+B	het-sub	1	0	0	0	0	1
+B	hom-ins	0	0	2	0	0	2
+B	hom-snp	0	0	6	0	0	6
+B	no-call-snp	0	0	0	1	0	1
+B	total	21	17	8	1	0	47
+

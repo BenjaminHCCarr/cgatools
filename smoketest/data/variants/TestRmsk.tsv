@@ -1,0 +1,9 @@
+#TYPE	UCSC-REPMASK
+#GENERATED_AT	2010-Dec-01 13:43
+#GENOME_REFERENCE	NCBI build 36
+
+>chromosome	begin	end	repName	repFamily	divergence	strand
+chr1	0	468	(CCCTAA)n	Simple_repeat	3.0	+
+chr1	468	1310	TAR1	telo	23.1	+
+chr1	1347	1538	L1MC	L1	44.7	+
+chr1	1540	1643	MER5B	MER1_type	32.3	+

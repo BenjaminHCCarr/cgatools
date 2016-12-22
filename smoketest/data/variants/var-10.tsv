@@ -1,0 +1,5 @@
+#ASSEMBLY_ID	asmId
+#TYPE	VAR-ANNOTATION
+#SOFTWARE_VERSION	1.5.0
+
+>locus	ploidy	haplotype	chromosome	begin	end	varType	reference	alleleSeq	totalScore	hapLink	xRef

@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>cgatools 1.8.0 manual</title>
+<style type="text/css">
+<!--
+pre {   font-family:"courier new", monospace;   font-size:9pt;}
+-->
+</style>
+</head>
+<body>
+<pre>cgatools version 1.8.0 build 1
+usage: cgatools COMMAND [ options ] [ positionalArgs ]
+
+For help on a particular command CMD, try "cgatools help CMD".
+Available commands:
+    <a href="#help">help</a>               Prints help information.
+    <a href="#man">man</a>                Prints the cgatools reference manual.
+    <a href="#fasta2crr">fasta2crr</a>          Converts fasta reference files to the crr format.
+    <a href="#crr2fasta">crr2fasta</a>          Converts a crr reference file to the fasta format.
+    <a href="#listcrr">listcrr</a>            Lists chromosomes, contigs, or ambiguous sequences of a 
+                       crr file.
+    <a href="#decodecrr">decodecrr</a>          Prints the reference sequence for a given reference 
+                       range.
+    <a href="#snpdiff">snpdiff</a>            Compares snp calls to a Complete Genomics variant file.
+    <a href="#calldiff">calldiff</a>           Compares two Complete Genomics variant files.
+    <a href="#listvariants">listvariants</a>       Lists the variants present in a variant file.
+    <a href="#testvariants">testvariants</a>       Tests variant files for presence of variants.
+    <a href="#evidence2sam">evidence2sam</a>       Converts CGI variant evidence data into SAM format.
+    <a href="#join">join</a>               Joins two tab-delimited files based on equal fields or 
+                       overlapping regions.
+    <a href="#junctiondiff">junctiondiff</a>       Reports difference between junction calls of Complete 
+                       Genomics junctions files.
+    <a href="#junctions2events">junctions2events</a>   Groups and annotates junction calls by event type.
+    <a href="#generatemastervar">generatemastervar</a>  Converts a variation file to a one-line-per-locus 
+                       format.
+    <a href="#varfilter">varfilter</a>          Copies input var file or masterVar file to output, 
+                       applying specified filters.
+    <a href="#mkvcf">mkvcf</a>              Converts var file(s) or masterVar file(s) to VCF.
+    
+
+
+-------------------------------------------------------------------------------
+
+<a name="help">COMMAND NAME</a>
+    help - Prints help information.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --command arg
+        The command to describe.
+
+  --format arg (=text)
+        The format of the output stream (text or html).
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="man">COMMAND NAME</a>
+    man - Prints the cgatools reference manual.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+  --format arg (=text)
+        The format of the output stream (text or html).
+
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="fasta2crr">COMMAND NAME</a>
+    fasta2crr - Converts fasta reference files to the crr format.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --input arg
+        The input fasta files (may be passed in as arguments at the end of the 
+        command, or omitted for stdin). Take care to specify the fasta files in
+        chromosome order; ordering is important. To work with human Complete 
+        Genomics data, the chromosome order should be chr1...chr22, chrX, chrY,
+        chrM.
+
+  --output arg
+        The output crr file.
+
+  --circular arg
+        A comma-separated list of circular chromosome names. If ommitted, 
+        defaults to chrM.
+
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="crr2fasta">COMMAND NAME</a>
+    crr2fasta - Converts a crr reference file to the fasta format.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --input arg
+        The input crr file (may be passed in as argument at the end of the 
+        command).
+
+  --output arg (=STDOUT)
+        The output fasta file (may be omitted for stdout).
+
+  --line-width arg (=50)
+        The maximum width of a line of sequence.
+
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="listcrr">COMMAND NAME</a>
+    listcrr - Lists chromosomes, contigs, or ambiguous sequences of a crr file.
+
+DESCRIPTION
+    For mode=chromosome, prints a space-separated table describing each 
+    chromosome within the reference. The columns are defined as follows:
+    
+        ChromosomeId A numeric identifier for the chromosome.
+        Chromosome   The name of the chromosome.
+        Length       The length in bases of the chromosome.
+        Circular     Boolean indicating if the chromosome is circular.
+        Md5          Md5 of the string containing the upper case IUPAC code for
+                     each base in the chromosome (spaces and dashes are 
+                     omitted).
+    
+    For mode=contig, prints a space-separated table describing each gap and 
+    each contig within the reference. Here, a gap between contigs is defined as
+    any stretch of min-contig-gap-length or more no-called reference bases (N 
+    character). The columns are defined as follows:
+    
+        ChromosomeId A numeric identifier for the chromosome.
+        Chromosome   The name of the chromosome.
+        Type         Either CONTIG or GAP.
+        Offset       The 0-based offset of the start of the contig or gap 
+                     within the chromosome.
+        Length       The length in bases of the contig or gap.
+    
+    For mode=ambiguity, prints a space-separated table describing each run of 
+    ambiguity codes within the reference. The columns are defined as follows:
+    
+        ChromosomeId A numeric identifier for the chromosome.
+        Chromosome   The name of the chromosome.
+        Code         The IUPAC code for the region.
+        Offset       The 0-based offset of the run of ambiguity codes in the 
+                     chromosome.
+        Length       The length in bases of the run of ambiguity codes.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --reference arg
+        The reference crr file (may be passed in as argument at the end of the 
+        command).
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+  --mode arg (=chromosome)
+        One of chromosome, contig, or ambiguity.
+
+  --min-contig-gap-length arg (=50)
+        Minimum length of gap between reference contigs, for mode=contig.
+
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="decodecrr">COMMAND NAME</a>
+    decodecrr - Prints the reference sequence for a given reference range.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --reference arg
+        The reference crr file (may be passed in as argument at the end of the 
+        command).
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+  --range arg
+        The range of bases to print (chr,begin,end or chr:begin-end).
+
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="snpdiff">COMMAND NAME</a>
+    snpdiff - Compares snp calls to a Complete Genomics variant file.
+
+DESCRIPTION
+    Compares the snp calls in the "genotypes" file to the calls in a Complete 
+    Genomics variant file. The genotypes file is a tab-delimited file with at 
+    least the following columns (additional columns may be given):
+    
+        Chromosome      (Required) The name of the chromosome.
+        Offset0Based    (Required) The 0-based offset in the chromosome.
+        GenotypesStrand (Optional) The strand of the calls in the Genotypes 
+                        column (+ or -, defaults to +).
+        Genotypes       (Optional) The calls, one per allele. The following 
+                        calls are recognized:
+                        A,C,G,T A called base.
+                        N       A no-call.
+                        -       A deleted base.
+                        .       A non-snp variation.
+    
+    The output is a tab-delimited file consisting of the columns of the 
+    original genotypes file, plus the following additional columns:
+    
+        Reference         The reference base at the given position.
+        VariantFile       The calls made by the variant file, one per allele. 
+                          The character codes are the same as is described for 
+                          the Genotypes column.
+        DiscordantAlleles (Only if Genotypes is present) The number of 
+                          Genotypes alleles that are discordant with calls in 
+                          the VariantFile. If the VariantFile is described as 
+                          haploid at the given position but the Genotypes is 
+                          diploid, then each genotype allele is compared 
+                          against the haploid call of the VariantFile.
+        NoCallAlleles     (Only if Genotypes is present) The number of 
+                          Genotypes alleles that were no-called by the 
+                          VariantFile. If the VariantFile is described as 
+                          haploid at the given position but the Genotypes is 
+                          diploid, then a VariantFile no-call is counted twice.
+    
+    The verbose output is a tab-delimited file consisting of the columns of the
+    original genotypes file, plus the following additional columns:
+    
+        Reference   The reference base at the given position.
+        VariantFile The call made by the variant file for one allele (there is 
+                    a line in this file for each allele). The character codes 
+                    are the same as is described for the Genotypes column.
+        [CALLS]     The rest of the columns are pasted in from the VariantFile,
+                    describing the variant file line used to make the call.
+    
+    The stats output is a comma-separated file with several tables describing 
+    the results of the snp comparison, for each diploid genotype. The tables 
+    all describe the comparison result (column headers) versus the genotype 
+    classification (row labels) in different ways. The "Locus classification" 
+    tables have the most detailed match classifications, while the "Locus 
+    concordance" tables roll these match classifications up into "discordance" 
+    and "no-call". A locus is considered discordant if it is discordant for 
+    either allele. A locus is considered no-call if it is concordant for both 
+    alleles but has a no-call on either allele. The "Allele concordance" 
+    describes the comparison result on a per-allele basis.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --reference arg
+        The input crr file.
+
+  --variants arg
+        The input variant file.
+
+  --genotypes arg
+        The input genotypes file.
+
+  --output-prefix arg
+        The path prefix for all output reports.
+
+  --reports arg (=Output,Verbose,Stats)
+        Comma-separated list of reports to generate. A report is one of:
+            Output  The output genotypes file.
+            Verbose The verbose output file.
+            Stats   The stats output file.
+        
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="calldiff">COMMAND NAME</a>
+    calldiff - Compares two Complete Genomics variant files.
+
+DESCRIPTION
+    Compares two Complete Genomics variant files. Divides the genome up into 
+    superloci of nearby variants, then compares the superloci. Also refines the
+    comparison to determine per-call or per-locus comparison results.
+    
+    Comparison results are usually described by a semi-colon separated string, 
+    one per allele. Each allele's comparison result is one of the following 
+    classifications:
+    
+        ref-identical   The alleles of the two variant files are identical, and
+                        they are consistent with the reference.
+        alt-identical   The alleles of the two variant files are identical, and
+                        they are inconsistent with the reference.
+        ref-consistent  The alleles of the two variant files are consistent, 
+                        and they are consistent with the reference.
+        alt-consistent  The alleles of the two variant files are consistent, 
+                        and they are inconsistent with the reference.
+        onlyA           The alleles of the two variant files are inconsistent, 
+                        and only file A is inconsistent with the reference.
+        onlyB           The alleles of the two variant files are inconsistent, 
+                        and only file B is inconsistent with the reference.
+        mismatch        The alleles of the two variant files are inconsistent, 
+                        and they are both inconsistent with the reference.
+        phase-mismatch  The two variant files would be consistent if the 
+                        hapLink field had been empty, but they are 
+                        inconsistent.
+        ploidy-mismatch The superlocus did not have uniform ploidy.
+    
+    In some contexts, this classification is rolled up into a simplified 
+    classification, which is one of "identical", "consistent", "onlyA", 
+    "onlyB", or "mismatch".
+    
+    A good place to start looking at the results is the superlocus-output file.
+    It has columns defined as follows:
+    
+        SuperlocusId   An identifier given to the superlocus.
+        Chromosome     The name of the chromosome.
+        Begin          The 0-based offset of the start of the superlocus.
+        End            The 0-based offset of the base one past the end of the 
+                       superlocus.
+        Classification The match classification of the superlocus.
+        Reference      The reference sequence.
+        AllelesA       A semicolon-separated list of the alleles (one per 
+                       haplotype) for variant file A, for the phasing with the 
+                       best comparison result.
+        AllelesB       A semicolon-separated list of the alleles (one per 
+                       haplotype) for variant file B, for the phasing with the 
+                       best comparison result.
+    
+    The locus-output file contains, for each locus in file A and file B that is
+    not consistent with the reference, an annotated set of calls for the locus.
+    The calls are annotated with the following columns:
+    
+        SuperlocusId            The id of the superlocus containing the locus.
+        File                    The variant file (A or B).
+        LocusClassification     The locus classification is determined by the 
+                                varType column of the call that is inconsistent
+                                with the reference, concatenated with a 
+                                modifier that describes whether the locus is 
+                                heterozygous, homozygous, or contains no-calls.
+                                If there is no one variant in the locus (i.e., 
+                                it is heterozygous alt-alt), the locus 
+                                classification begins with "other".
+        LocusDiffClassification The match classification for the locus. This is
+                                defined to be the best of the comparison of the
+                                locus to the same region in the other file, or 
+                                the comparison of the superlocus.
+    
+    The somatic output file contains a list of putative somatic variations of 
+    genome A. The output includes only those loci that can be classified as 
+    snp, del, ins or sub in file A, and are called reference in the file B. 
+    Every locus is annotated with the following columns:
+    
+        VarCvgA                 The totalReadCount from file A for this locus 
+                                (computed on the fly if file A is not a 
+                                masterVar file).
+        VarScoreA               The varScoreVAF from file A, or varScoreEAF if 
+                                the "--diploid" option is used.
+        RefCvgB                 The maximum of the uniqueSequenceCoverage 
+                                values for the locus in genome B.
+        RefScoreB               Minimum of the reference scores of the locus in
+                                genome B.
+        SomaticCategory         The category used for determining the 
+                                calibrated scores and the SomaticRank.
+        VarScoreACalib          The calibrated variant score of file A, under 
+                                the model selected by using or not using the 
+                                "--diploid" option, and corrected for the count
+                                of heterozygous variants observed in this 
+                                genome. See user guide for more information.
+        VarScoreBCalib          The calibrated reference score of file B, under
+                                the model selected by using or not using the 
+                                "--diploid" option, and corrected for the count
+                                of heterozygous variants observed in this 
+                                genome. See user guide for more information.
+        SomaticRank             The estimated rank of this somatic mutation, 
+                                amongst all true somatic mutations within this 
+                                SomaticCategory. The value is a number between 
+                                0 and 1; a value of 0.012 means, for example, 
+                                that an estimated 1.2% of the true somatic 
+                                mutations in this somaticCategory have a 
+                                somaticScore less than the somaticScore for 
+                                this mutation. See user guide for more 
+                                information.
+        SomaticScore            An integer that provides a total order on 
+                                quality for all somatic mutations. It is equal 
+                                to -10*log10( P(false)/P(true) ), under the 
+                                assumption that this genome has a rate of 
+                                somatic mutation equal to 1/Mb for 
+                                SomaticCategory snp, 1/10Mb for SomaticCategory
+                                ins, 1/10Mb for SomaticCategory del, and 1/20Mb
+                                for SomaticCategory sub. The computation is 
+                                based on the assumptions described in the user 
+                                guide, and is affected by choice of variant 
+                                model selected by using or not using the 
+                                "--diploid" option.
+    
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --reference arg
+        The input crr file.
+
+  --variantsA arg
+        The "A" input variant file.
+
+  --variantsB arg
+        The "B" input variant file.
+
+  --output-prefix arg
+        The path prefix for all output reports.
+
+  --reports arg (=SuperlocusOutput,SuperlocusStats,LocusOutput,LocusStats)
+        Comma-separated list of reports to generate. (Beware any reports whose 
+        name begins with "Debug".) A report is one of:
+            SuperlocusOutput      Report for superlocus classification.
+            SuperlocusStats       Report for superlocus classification stats.
+            LocusOutput           Report for locus classification.
+            LocusStats            Report for locus stats.
+            VariantOutput         Both variant files annotated by comparison 
+                                  results.If the somatic output report is 
+                                  requested, file A is also annotated with the 
+                                  same score ranks as produced in that report.
+            SomaticOutput         Report for the list of simple variations that
+                                  are present only in file "A", annotated with 
+                                  the score that indicates the probability of 
+                                  the variation being truly somatic. Requires 
+                                  beta, genome-rootA, and genome-rootB options 
+                                  to be provided as well. Note: generating this
+                                  report slows calldiff by 10x-20x.
+            DebugCallOutput       Report for call classification.
+            DebugSuperlocusOutput Report for debug superlocus information.
+            DebugSomaticOutput    Report for distribution estimates used for 
+                                  somatic rescoring. Only produced if 
+                                  SomaticOutput is also turned on.
+        
+
+  --diploid 
+        Uses varScoreEAF instead of varScoreVAF in somatic score computations. 
+        Also, uses diploid variant model instead of variable allele mixture 
+        model.
+        
+
+  --locus-stats-column-count arg (=15)
+        The number of columns for locus compare classification in the locus 
+        stats file.
+
+  --max-hypothesis-count arg (=32)
+        The maximum number of possible phasings to consider for a superlocus.
+
+  --no-reference-cover-validation 
+        Turns off validation that all bases of a chromosome are covered by 
+        calls of the variant file.
+
+  --genome-rootA arg
+        The "A" genome directory, for example /data/GS00118-DNA_A01; this 
+        directory is expected to contain ASM/REF and ASM/EVIDENCE 
+        subdirectories.
+
+  --genome-rootB arg
+        The "B" genome directory.
+
+  --calibration-root arg
+        The directory containing calibration data. For example, there should 
+        exist a file calibration-root/0.0.0/metrics.tsv.
+
+  --beta 
+        This flag enables the SomaticOutput report, which is beta 
+        functionality.
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="listvariants">COMMAND NAME</a>
+    listvariants - Lists the variants present in a variant file.
+
+DESCRIPTION
+    Lists all called variants present in the specified variant files, in a 
+    format suitable for processing by the testvariants command. The output is a
+    tab-delimited file consisting of the following columns:
+    
+        variantId  Sequential id assigned to each variant.
+        chromosome The chromosome of the variant.
+        begin      0-based reference offset of the beginning of the variant.
+        end        0-based reference offset of the end of the variant.
+        varType    The varType as extracted from the variant file.
+        reference  The reference sequence.
+        alleleSeq  The variant allele sequence as extracted from the variant 
+                   file.
+        xRef       The xRef as extrated from the variant file.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  --reference arg
+        The reference crr file.
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+  --variants arg
+        The input variant files (may be passed in as argument at the end of the
+        command).
+
+  --variant-listing arg
+        The output of another listvariants run, to be merged in to produce the 
+        output of this run.
+
+  --list-long-variants 
+        In addition to listing short variants, list longer variants as well 
+        (10's of bases) by concatenating nearby calls.
+        
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="testvariants">COMMAND NAME</a>
+    testvariants - Tests variant files for presence of variants.
+
+DESCRIPTION
+    Tests variant files for presence of variants. The output is a tab-delimited
+    file consisting of the columns of the input variants file, plus a column 
+    for each assembly results file that contains a character code for each 
+    allele. The character codes have meaning as follows:
+    
+        0 This allele of this genome is consistent with the reference at this 
+          locus but inconsistent with the variant.
+        1 This allele of this genome has the input variant at this locus.
+        N This allele of this genome has no-calls but is consistent with the 
+          input variant.
+    
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  --reference arg
+        The reference crr file.
+
+  --input arg (=STDIN)
+        The input variants to test for.
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+  --variants arg
+        The input variant files (may be passed in as arguments at the end of 
+        the command).
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="evidence2sam">COMMAND NAME</a>
+    evidence2sam - Converts CGI variant evidence data into SAM format.
+
+DESCRIPTION
+    The evidence2sam converter takes as input evidence mapping files 
+    (evidenceDnbs-*) and generates one SAM file as an output. The output is 
+    sent into stdout by default. By default, all the evidence mapping records 
+    from the input are converted into a pair of corresponding SAM records - one
+    record for each HalfDNB. The negative gaps in CGI mappings are represented 
+    using GS/GQ/GC tags.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  -e [ --evidence-dnbs ] arg
+        Input evidence dnbs file.
+
+  -s [ --reference ] arg
+        Reference file.
+
+  -o [ --output ] arg (=STDOUT)
+        The output SAM file (may be omitted for stdout).
+
+  -r [ --extract-genomic-region ] arg
+        defines a region as a half-open interval 'chr,from,to'.
+
+  --keep-duplicates 
+        Keep local duplicates of DNB mappings.All the output SAM records will 
+        be marked as not primary if this option is used.
+
+  --add-allele-id 
+        Generate interval id and allele id tags.
+
+  --skip-not-mapped 
+        Skip not mapped records
+
+  --add-mate-sequence 
+        Generate mate sequence and score tags.
+
+  --mate-sv-candidates 
+        Inconsistent mappings are normally converted as single arm mappings 
+        with no mate information provided. If the option is used map2sam will 
+        mate unique single arm mappings in SAM including those on different 
+        stands and chromosomes. To distinguish these "artificially" mated 
+        records a tag "XS:i:1" is used. The MAPQ provided for these records is 
+        a single arm mapping weight.
+
+  --add-unmapped-mate-info 
+        works like add-mate-sequence, but is applied to inconsistent mappings 
+        only
+
+  --primary-mappings-only 
+        report only the best mappings
+
+  --consistent-mapping-range arg (=1300)
+        limit the maximum distance between consistent mates
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="join">COMMAND NAME</a>
+    join - Joins two tab-delimited files based on equal fields or overlapping regions.
+
+DESCRIPTION
+    Joins two tab-delimited files based on equal fields or overlapping regions.
+    By default, an output record is produced for each match found between file 
+    A and file B, but output format can be controlled by the --output-mode 
+    parameter.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  --input arg
+        File name to use as input (may be passed in as arguments at the end of 
+        the command), or omitted for stdin). There must be exactly two input 
+        files to join. If only one file is specified by name, file A is taken 
+        to be stdin and file B is the named file. File B is read fully into 
+        memory, and file A is streamed. File A's columns appear first in the 
+        output.
+
+  --output arg (=STDOUT)
+        The output file name (may be omitted for stdout).
+
+  --match arg
+        A match specification, which is a column from A and a column from B 
+        separated by a colon.
+
+  --overlap arg
+        Overlap specification. An overlap specification consists of a range 
+        definition for files A and B, separated by a colon. A range definition 
+        may be two columns, in which case they are interpreted as the beginning
+        and end of the range. Or it may be one column, in which case the range 
+        is defined as the 1-base range starting at the given value. The records
+        from the two files must overlap in order to be considered for output. 
+        Two ranges are considered to overlap if the overlap is at least one 
+        base long, or if one of the ranges is length 0 and the ranges overlap 
+        or abut. For example, "begin,end:offset" will match wherever end-begin 
+        &gt; 0, begin&lt;offset+1, and end&gt;offset, or wherever end-begin = 0, 
+        begin&lt;=offset+1, and end&gt;=offset.
+
+  -m [ --output-mode ] arg (=full)
+        Output mode, one of the following:
+            full        Print an output record for each match found between 
+                        file A and file B.
+            compact     Print at most one record for each record of file A, 
+                        joining the file B values by a semicolon and 
+                        suppressing repeated B values and empty B values.
+            compact-pct Same as compact, but for each distinct B value, 
+                        annotate with the percentage of the A record that is 
+                        overlapped by B records with that B value. Percentage 
+                        is rounded up to nearest integer.
+
+  --overlap-mode arg (=strict)
+        Overlap mode, one of the following:
+            strict                Range A and B overlap if A.begin &lt; B.end and 
+                                  B.begin &lt; A.end.
+            allow-abutting-points Range A and B overlap they meet the strict 
+                                  requirements, or if A.begin &lt;= B.end and 
+                                  B.begin &lt;= A.end and either A or B has zero 
+                                  length.
+
+  --select arg (=A.*,B.*)
+        Set of fields to select for output.
+
+  -a [ --always-dump ] 
+        Dump every record of A, even if there are no matches with file B.
+
+  --overlap-fraction-A arg (=0)
+        Minimum fraction of A region overlap for filtering output.
+
+  --boundary-uncertainty-A arg (=0)
+        Boundary uncertainty for overlap filtering. Specifically, records 
+        failing the following predicate are filtered away: overlap &gt;= 
+        overlap-fraction-A * ( A-range-length - boundary-uncertainty-A )
+
+  --overlap-fraction-B arg (=0)
+        Minimum fraction of B region overlap for filtering output.
+
+  --boundary-uncertainty-B arg (=0)
+        Boundary uncertainty for overlap filtering. Specifically, records 
+        failing the following predicate are filtered away: overlap &gt;= 
+        overlap-fraction-B * ( B-range-length - boundary-uncertainty-B )
+
+
+SUPPORTED FORMAT_VERSION
+    Any
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="junctiondiff">COMMAND NAME</a>
+    junctiondiff - Reports difference between junction calls of Complete Genomics junctions files.
+
+DESCRIPTION
+    junctiondiff takes two junction files A and B as input and produces the 
+    following output:
+      - "diff-inputFileName" - the junctions from an input file A that are not 
+        present in input file B.
+      - "report.txt" - a brief summary report (if --statout is used)
+    
+    Two junctions are considered equivalent if:
+      - they come from different files
+      - left and right positions of one junction are not more than "--distance"
+        bases apart from the corresponding positions of another junction
+      - the junction scores are equal or above the scoreThreshold
+      - they are on the same strands
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  -s [ --reference ] arg
+        Reference file.
+
+  -a [ --junctionsA ] arg
+        input junction file A.
+
+  -b [ --junctionsB ] arg
+        input junction file B.
+
+  -A [ --scoreThresholdA ] arg (=10)
+        score threshold value for the input file A.
+
+  -B [ --scoreThresholdB ] arg (=0)
+        score threshold value for the input file B.
+
+  -d [ --distance ] arg (=200)
+        Max distance between coordinates of potentially compatible junctions.
+
+  -l [ --minlength ] arg (=500)
+        Minimum deletion junction length to be included into the difference 
+        file.
+
+  -o [ --output-prefix ] arg
+        The path prefix for all the output reports.
+
+  -S [ --statout ] 
+        (Debug) Report various input file statistics. Experimental feature.
+
+
+SUPPORTED FORMAT_VERSION
+    1.5 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="junctions2events">COMMAND NAME</a>
+    junctions2events - Groups and annotates junction calls by event type.
+
+DESCRIPTION
+    This tool searches for groups of related junctions and for every group 
+    attempts to determine the event that caused the junctions. For example, 
+    isolated strand-consistent intrachromosomal junction is likely to be caused
+    by a deletion event.
+    Every junction in the file specified by "junctions" parameter will be 
+    annotated. Optionally, the tool can search for the related junctions in a 
+    larger list of junctions specified by "all-junctions" parameter. For 
+    example, one may use the high confidence junction file to restrict the list
+    of events to ones that contain at least one high-confidence junction, while
+    using the complete list of all junctions to make sure that even 
+    low-confidence junctions will be taken into account when grouping the 
+    junctions and determining the event type.
+    The output consists of two files, [prefix]AnnotatedJunctions.tsv and 
+    [prefix]Events.tsv. The annotated junction file contains the junctions from
+    the primary input file annotated by the following columns:
+    
+        EventId           Integer id that links the junction file to the event 
+                          file
+        Type              Type of the event that caused the junction
+        RelatedJunctions  Semicolon-separated list of other junctions that were
+                          grouped with this junction
+    
+    The event list file contains the following columns:
+    
+        EventId     Unique id of the event
+        Type        Type of the event. One of the following values:
+            artifact  caused by a flaw in the reference
+            complex   event involves multiple junctions and doesn't fit the 
+                      pattern of any simple event type
+            deletion  deletion of the sequence described by the Origin columns
+            tandem-duplication tandem duplication of the origin sequence
+            probable-inversion inversion of the origin sequence that is 
+                               confirmed from one side of the inversion only
+            inversion inversion of the origin sequence replacing the sequence 
+                      described by the Destination columns, confirmed from both
+                      sides
+            distal-duplication copy of the origin sequence into the area 
+                               described by the Destination columns
+            distal-duplication-by-mobile-element copy of the origin sequence 
+                                                 caused by a known active 
+                                                 mobile element
+            interchromosomal isolated junction between different chromosomes; 
+                             Origin and Destination columns describe the 
+                             reference loci that are brought together by this 
+                             event.
+        RelatedJunctionIds Semicolon-separated list of the junctions related to
+                           this event.
+        MatePairCounts Semicolon-separated list that contains the read count 
+                       for every related junction.
+        FrequenciesInBaselineGenomeSet Semicolon-separated list that contains 
+                                       the frequency in the baseline set of 
+                                       genomes for every related junction.
+        OriginRegion[...] Description of the origin sequence of the event; the 
+                          exact semantics of "origin" depend on the event type.
+        DestinationRegion[...] Description of the destination region for the 
+                               event.
+        DisruptedGenes List of all genes that contain one or more of the 
+                       locations of the junctions grouped to this event.
+        ContainedGenes For the events that duplicate or remove regions of 
+                       sequence, this column contains the list of genes fully 
+                       contained within the deleted or copied region.
+        GeneFusions List of possible gene fusions described as GeneA/GeneB, and
+                    fusions of regulatory sequence of one gene to another gene,
+                    described as TSS-UPSTREAM[GeneA]/GeneB.
+        RelatedMobileElement For the duplication events caused by a mobile 
+                             element, this column contain the description of 
+                             the element in Family:Name:DivergencePercent 
+                             format, for example "L1:L1HS:0.5".
+        MobileElement[...] Location of the mobile element
+    
+    All sequence intervals are described using zero-based, half-open 
+    coordinates.
+    
+    Repeat and gene data files necessary to run this command can be downloaded 
+    from the Complete Genomics site:
+    
+    ftp://ftp.completegenomics.com/AnnotationFiles/
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  --reference arg
+        Reference file.
+
+  --output-prefix arg
+        The path prefix for all output reports.
+
+  --junctions arg
+        Primary input junction file.
+
+  --all-junctions arg
+        Superset of the input junction file to use when searching for the 
+        related junctions. The default is to use only the junctions in the 
+        primary junction file.
+
+  --repmask-data arg
+        The file that contains repeat masker data.
+
+  --gene-data arg
+        The file that contains gene location data.
+
+  --regulatory-region-length arg (=7500)
+        Length of the region upstream of the gene that may contain regulatory 
+        sequence for the gene. Junctions that connect this region to another 
+        gene will be annotated as a special kind of gene fusion.
+
+  --contained-genes-max-range arg (=-1)
+        Maximum length of a copy or deletion event to annotate with all genes 
+        that overlap the copied or deleted segment. Negative value causes all 
+        events to be annotated regardless of the length.
+
+  --max-related-junction-distance arg (=700)
+        Junctions occurring within this distance are presumed to be related.
+
+  --max-pairing-distance arg (=10000000)
+        When searching for paired junctions caused by the same event, maximum 
+        allowed distance between junction sides.
+
+  --max-copy-target-length arg (=1000)
+        Pairs of junctions will be classified as a copy event only if the 
+        length of the implied copy target region is below this threshold.
+
+  --max-simple-event-distance arg (=10000000)
+        When given a choice of explaining an event as a mobile element copy or 
+        as a simple deletion/duplication, prefer the latter explanation if the 
+        length of the affected sequence if below this threshold.
+
+  --mobile-element-names arg (=L1HS,SVA)
+        Comma-separated list of the names of the mobile elements that are known
+        to be active and sometimes copy flanking 3' sequence.
+
+  --max-distance-to-m-e arg (=2000)
+        When searching for a mobile element related to a junction, maximum 
+        allowed distance from the junction side to the element.
+
+  --max-related-junction-output arg (=100)
+        Maximum number of related junctions included into annotation field
+
+
+SUPPORTED FORMAT_VERSION
+    1.5 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="generatemastervar">COMMAND NAME</a>
+    generatemastervar - Converts a variation file to a one-line-per-locus format.
+
+DESCRIPTION
+    The output file contains one line for each locus in the input variation 
+    file. The following columns are always present:
+    
+        locus           Locus ID, as in the input file.
+        chromosome      The name of the chromosome.
+        begin           The first base of the locus interval, 0-based.
+        end             The first base past the locus interval, 0-based.
+        zygosity        One of the following values:
+            no-call         both alleles contain no-calls
+            half            one allele fully called
+            hap             haploid region
+            hom             homozygous region
+            het-ref         heterozygous region, one allele is reference
+            het-alt         heterozygous region, neither allele is reference
+        varType         For simple loci, one of "ref", "snp", "del", "ins" or 
+                        "sub". For more complex regions, "complex".
+        reference       Reference sequence, or "=" for pure reference or pure 
+                        no call regions.
+        allele1Seq      Sequence of the first allele, may contain "?" or "N" 
+                        characters for unknown-length and known-length 
+                        no-calls, respectively.
+        allele2Seq      Sequence of the second allele.
+        allele1VarScoreVAF  The varScoreVAF of the first allele. For pre-2.0 
+                            var files, which have totalScore instead of 
+                            varScoreVAF, this column is filled in with 
+                            totalScore. For the loci that contain multiple 
+                            calls, this is the minimum score across all calls.
+        allele2VarScoreVAF  The varScoreVAF of the first allele. For pre-2.0 
+                            var files, which have totalScore instead of 
+                            varScoreVAF, this column is filled in with 
+                            totalScore. For the loci that contain multiple 
+                            calls, this is the minimum score across all calls.
+        allele1VarScoreEAF  The varScoreEAF of the first allele. For pre-2.0 
+                            var files, which have totalScore instead of 
+                            varScoreEAF, this column is filled in with 
+                            totalScore. For the loci that contain multiple 
+                            calls, this is the minimum score across all calls.
+        allele2VarScoreEAF  The varScoreEAF of the first allele. For pre-2.0 
+                            var files, which have totalScore instead of 
+                            varScoreEAF, this column is filled in with 
+                            totalScore. For the loci that contain multiple 
+                            calls, this is the minimum score across all calls.
+        allele1VarFilter    The varFilter of the first allele. For pre-2.0 var 
+                            files, which do not have a varQuality column, this 
+                            field is empty. For multiple calls, this is the 
+                            union of varFilters across all calls.
+        allele2VarFilter    The varFilter of the second allele. For pre-2.0 var
+                            files, which do not have a varQuality column, this 
+                            field is empty. For multiple calls, this is the 
+                            union of varFilters across all calls.
+        allele1HapLink  Haplink ID of the first allele. Alleles with the same 
+                        ID are known to reside on the same haplotype.
+        allele2HapLink  Haplink ID of the second allele.
+    
+    The allele to be placed first is chosen according to the following priority
+    list: 
+    
+        fully called variant allele;
+        fully called reference allele;
+        partially called allele;
+        completely no-called allele.
+    
+    In addition to the mandatory columns above, various annotation columns can 
+    be added to the file using "annotations" parameter. The supported 
+    annotation sources and the corresponding additional columns are listed 
+    below.
+    
+        copy             Adds column "xRef" that contains a concatenation of 
+                         all dbSNP annotations for this locus from the input 
+                         variant file. If the source file is already in 
+                         one-line-per-locus format, also copies over all other 
+                         annotations already present in the source.
+        evidence         Adds columns:
+            evidenceIntervalId   ID of the corresponding evidence interval.
+            allele1ReadCount     Number of evidence reads that support the 
+                                 first allele
+            allele2ReadCount     Number of evidence reads that support the 
+                                 second allele
+            referenceAlleleReadCount Number of evidence reads that support the 
+                                     reference
+            totalReadCount       Total number of evidence reads that overlap 
+                                 the locus. This includes reads that don't show
+                                 strong support for either of the called 
+                                 alleles.
+        ref              Adds column "minReferenceScore" that contains the 
+                         minimum value of the reference score over the locus 
+                         interval extended by one base in either direction. Off
+                         by default.
+        gene             Adds columns "allele1Gene" and "allele2Gene" that 
+                         contain summarized information about the overlap and 
+                         impact on known genes. Derived from the gene 
+                         annotation in the CGI data package.
+        ncrna            Adds column "miRBaseId" that contains summarized 
+                         information about overlap with non-coding RNA. Derived
+                         from the ncRNA file in the CGI data package.
+        repeat           Adds column "repeatMasker" that contains information 
+                         about the repeats overlapping the locus. Requires a 
+                         data file available from the Complete Genomics site: 
+                         ftp://ftp.completegenomics.com/AnnotationFiles/
+        segdup           Adds column "segDupOverlap" that contains the number 
+                         segmental duplications overlapping the locus. Requires
+                         a data file available from Complete Genomics site: 
+                         ftp://ftp.completegenomics.com/AnnotationFiles/
+        cnv              Adds the cnvDiploid, cnvNondiploid and (if present) 
+                         cnvSomNondiploid annotations (described below), as 
+                         available in the CGI data package.
+        cnvDiploid       Adds columns "relativeCoverageDiploid" and 
+                         "calledPloidy" derived from the diploid CNV call 
+                         details in the CGI data package.
+        cnvNondiploid    Adds columns "relativeCoverageNondiploid", 
+                         "calledLevel", and, if present, "bestLAFsingle", 
+                         "lowLAFsingle", and "highLAFsingle" columns derived 
+                         from the nondiploid CNV call details in the CGI data 
+                         package.
+        cnvSomNondiploid Adds columns "relativeCoverageSomaticNondiploid", and 
+                         "somaticCalledLevel" columns derived from the somatic 
+                         nondiploid CNV call details in the CGI data package.  
+                         Additionally, "bestLAFpaired", "lowLAFpaired", and 
+                         "highLAFpaired" columns will be added, based on 
+                         columns with the same name, or, in the case of older 
+                         data packages, "bestLAF", "lowLAF", and "highLAF".
+        fisherSomatic   Adds column "fisherSomaticScore" that contains an 
+                        alternative score indicating confidence in a somatic 
+                        variant call.  The score is computed using one-tailed 
+                        Fisher's Exact Test on counts of reads supporting alt 
+                        and reference alleles in the baseline and non-baseline 
+                        samples.  The given score is intended to have a 
+                        PHRED-like interpretation of -10*log10(probability of 
+                        an erroneous call), though details of the count 
+                        tabulation make the intended calibration only 
+                        approximate.
+    
+    The column groups are added in the order they are listed in the 
+    "annotations" command line parameter. By default the tool will attempt to 
+    add all annotations. For older data packages that do not contain some of 
+    the necessary files remove the corresponding annotation source from the 
+    list.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  --reference arg
+        The reference crr file.
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+  --variants arg
+        The input variant file.
+
+  --annotations arg (=copy,evidence,gene,ncrna,repeat,segdup,cnv)
+        Comma-separated list of annotations to add to each line.
+
+  --genome-root arg
+        The genome directory, for example /data/GS00118-DNA_A01; this directory
+        is expected to contain an intact ASM subdirectory.
+
+  --repmask-data arg
+        The file that contains repeat masker data.
+
+  --segdup-data arg
+        The file that contains segdup data.
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="varfilter">COMMAND NAME</a>
+    varfilter - Copies input var file or masterVar file to output, applying specified filters.
+
+DESCRIPTION
+    Copies input var file or masterVar file to output, applying specified 
+    filters (which are available to all cgatools commands that read a var file 
+    or masterVar file as input). Filters are specified by appending the filter 
+    specification to the var file name on the command line. For example:
+    
+    /path/to/var.tsv.bz2#varQuality!=VQHIGH
+    
+    The preceding example filters out any calls marked as VQLOW. The filter 
+    specification follows the "#" sign, and consists of a list of filters to 
+    apply, separated by a comma. Each filter is a colon-separated list of call 
+    selectors. Any scored call that passes all the colon-separated call 
+    selectors for one or more of the comma-separated filters is turned into a 
+    no-call. The following call selectors are available:
+    
+        hom            Selects only calls in homozygous loci.
+        het            Selects any scored call not selected by the hom 
+                       selector.
+        varType=XX     Selects calls whose varType is XX.
+        varScoreVAF&lt;XX Selects calls whose varScoreVAF&lt;XX.
+        varScoreEAF&lt;XX Selects calls whose varScoreEAF&lt;XX.
+        varQuality!=XX (Pre-2.4.0 var files) Selects calls whose varQuality is 
+                       not XX.
+        varFilter!=XX  Selects calls whose varFilter is not XX.
+        varFilter contains XX|YY Selects calls whose varFilter contains XX or 
+                                 YY.
+    
+    Here is an example that filters homozygous SNPs with varScoreVAF &lt; 25 and 
+    heterozygous insertions with varScoreEAF &lt; 50:
+    
+    
+    &apos;/path/to/var.tsv.bz2#hom:varType=snp:varScoreVAF&lt;25,het:varType=ins:varScoreEAF&lt;50&apos;
+    
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  --reference arg
+        The reference crr file.
+
+  --input arg
+        The input var file or masterVar file (typically with filters 
+        specified).
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+
+
+-------------------------------------------------------------------------------
+
+<a name="mkvcf">COMMAND NAME</a>
+    mkvcf - Converts var file(s) or masterVar file(s) to VCF.
+
+DESCRIPTION
+    Converts var file(s) or masterVar file(s) to VCF.
+
+OPTIONS
+  -h [ --help ] 
+        Print this help message.
+
+  --beta 
+        This is a beta command. To run this command, you must pass the --beta 
+        flag.
+
+  --reference arg
+        The reference crr file.
+
+  --output arg (=STDOUT)
+        The output file (may be omitted for stdout).
+
+  --field-names arg (=GT,PS,NS,AN,AC,AF,SS,FT,CGA_XR,CGA_ALTCALLS,CGA_FI,GQ,HQ,EHQ,CGA_CEHQ,GL,CGA_CEGL,DP,AD,CGA_RDP,CGA_ODP,CGA_OAD,CGA_ORDP,CGA_PFAM,CGA_MIRB,CGA_RPT,CGA_SDO,CGA_SOMC,CGA_SOMR,CGA_SOMS,CGA_SOMF,GT,CGA_GP,CGA_NP,CGA_CP,CGA_PS,CGA_CT,CGA_TS,CGA_CL,CGA_LS,CGA_LAFS,CGA_LLAFS,CGA_ULAFS,CGA_SCL,CGA_SLS,CGA_LAFP,CGA_LLAFP,CGA_ULAFP,GT,FT,CGA_IS,CGA_IDC,CGA_IDCL,CGA_IDCR,CGA_RDC,CGA_NBET,CGA_ETS,CGA_KES,GT,FT,CGA_BF,CGA_MEDEL,MATEID,SVTYPE,CGA_BNDG,CGA_BNDGO,CGA_BNDMPC,CGA_BNDPOS,CGA_BNDDEF,CGA_BNDP)
+        Comma-separated list of field names. By default, all fields are 
+        included, but you may override this option to ensure only a subset of 
+        the fields is included in the VCF output. For a description of each 
+        field, see the cgatools user guide.
+
+  --source-names arg (=masterVar,CNV,SV,MEI)
+        Comma-separated list of source names. The following source names are 
+        available:
+          masterVar - Includes records extracted from the masterVar file.
+          CNV       - Includes CNV-related records.
+          SV        - Includes records derived from junctions files.
+          MEI       - Includes records describing mobile element insertions.
+        Some of these source types are only available for more recent pipeline 
+        versions, and some of these source types do not support multi-genome 
+        VCFs. For more information about which source types are available for 
+        which versions of the Complete Genomics pipeline software, see the 
+        cgatools user guide.
+
+  --genome-root arg
+        For each genome to include in the VCF, the genome root directory, for 
+        example /data/GS00118-DNA_A01; this directory is expected to contain 
+        the ASM and LIB subdirectories, for example. You must supply this 
+        option for each genome in the VCF, unless you are using 
+        --source-names=masterVar and you have specified the --master-var option
+        for each genome in the VCF.
+
+  --master-var arg
+        For each genome to include in the VCF, the masterVar file. If 
+        genome-roots parameter is given, this parameter defaults to the 
+        masterVar in the given genome-root.
+
+  --include-no-calls 
+        Small variants VCF records include loci that have no 
+        reference-inconsistent calls.
+        
+
+  --calibration-root arg
+        The directory containing calibration data. For example, there should 
+        exist a file calibration-root/0.0.0/metrics.tsv. This option is only 
+        required if CGA_CEHQ or CGA_CEGL are included in the --field-names 
+        parameter.
+
+  --junction-file arg
+        For each genome to include in the VCF, the junctions file. If 
+        genome-roots parameter is given, this parameter defaults to the 
+        respective junctions file in the export directory.
+
+  --junction-score-threshold arg (=10)
+        Junction score thresholds (discordant mate pair count).
+
+  --junction-side-length-threshold arg (=70)
+        Junction side length threshold.
+
+  --junction-distance-tolerance arg (=200)
+        Distance tolerance for junction compatibility.
+
+  --junction-length-threshold arg (=500)
+        Length threshold for compatible junctions.
+
+  --junction-normal-priority 
+        Normal junction priority for vcf output.
+
+  --junction-tumor-hc 
+        use high confidence junctions for tumors.
+
+
+SUPPORTED FORMAT_VERSION
+    0.3 or later
+
+</pre>
+</body>
+</html>

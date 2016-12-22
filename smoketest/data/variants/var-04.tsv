@@ -1,0 +1,8 @@
+#ASSEMBLY_ID	asmId
+#TYPE	VAR-ANNOTATION
+
+>locus	ploidy	haplotype	chromosome	begin	end	varType	reference	alleleSeq	totalScore	hapLink	xRef
+1	2	1	chr1	0	1	no-call	T	?		
+1	2	1	chr1	1	30	ref	TTAACAGAAAAATGAGCATGGAAAGGTAA	TTAACAGAAAAATGAGCATGGAAAGGTAA	35		
+1	2	2	chr1	0	30	no-call	TTTAACAGAAAAATGAGCATGGAAAGGTAA	?			
+2	2	all	chr1	30	85	ref	=	=			

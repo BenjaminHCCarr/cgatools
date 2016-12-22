@@ -1,0 +1,50 @@
+SuperlocusId	Chromosome	Begin	End	Classification	Reference	AllelesA	AllelesB
+1	chr1	84	87	alt-identical;ref-consistent	GAC	GGAC;GAN	GGAC;GAN
+2	chr1	320	328	ref-consistent;onlyA	ATTTTGGT	?;ATTCTGGT	ATTTTGGT;ATTTTGGT
+3	chr1	610	611	ref-identical;onlyB	C	C;C	C;T
+4	chr1	1203	1204	alt-identical;onlyA	C	T;T	T;C
+5	chr1	1874	1875	ref-identical;alt-identical	G	G;C	G;C
+6	chr1	2335	2336	alt-identical;alt-identical	G	A;A	A;A
+7	chr1	3262	3263	ref-identical;alt-identical	T	T;	T;
+8	chr1	3463	3464	ref-identical;alt-identical	C	C;T	C;T
+9	chr1	5081	5082	ref-identical;alt-identical	G	G;A	G;A
+10	chr1	6200	6200	alt-identical;alt-identical		GA;GA	GA;GA
+11	chr1	6596	6597	ref-identical;alt-identical	A	A;G	A;G
+12	chr1	6635	6636	ploidy-mismatch	A		
+13	chr1	6680	6684	ploidy-mismatch	TGTA		
+14	chr1	6710	6714	phase-mismatch;phase-mismatch	TTTA	TTCA;CTTA	TTTA;CTCN
+15	chr2	761	762	ploidy-mismatch	C		
+16	chr2	1064	1065	ploidy-mismatch	G		
+17	chr2	1788	1789	ploidy-mismatch	T		
+18	chr2	2622	2623	ploidy-mismatch	C		
+19	chr2	2809	2809	ploidy-mismatch			
+20	chr2	3079	3080	ploidy-mismatch	A		
+21	chr2	3967	3968	ploidy-mismatch	C		
+22	chr2	5008	5009	ploidy-mismatch	G		
+23	chr2	5174	5175	ploidy-mismatch	T		
+24	chr2	6127	6128	ploidy-mismatch	T		
+25	chr2	7372	7373	ploidy-mismatch	C		
+26	chr2	7604	7605	ploidy-mismatch	T		
+27	chr2	7709	7710	ploidy-mismatch	A		
+28	chr2	8842	8843	ploidy-mismatch	T		
+29	chr2	9373	9374	ploidy-mismatch	A		
+30	chr2	12457	12458	ploidy-mismatch	C		
+31	chr2	13029	13030	ploidy-mismatch	T		
+32	chr2	13951	13952	ploidy-mismatch	A		
+33	chrM	358	363	alt-consistent	AAAAA	AAAAAA	?AAAAA
+34	chrM	954	955	alt-identical	T	C	C
+35	chrM	3385	3386	alt-consistent	A		?
+36	chrM	3403	3406	alt-consistent	CTA	TTG	TNG
+37	chrM	3659	3659	alt-identical		T	T
+38	chrM	4096	4097	alt-identical	C	G	G
+39	chrM	4567	4568	alt-identical	T	G	G
+40	chrM	4923	4924	alt-identical	A	G	G
+41	chrM	5993	5994	alt-identical	C	G	G
+42	chrM	10268	10269	alt-identical	C	T	T
+43	chrM	10337	10343	alt-identical	ATTAAT		
+44	chrM	10355	10356	alt-identical	C	A	A
+45	chrM	10601	10602	alt-identical	T	A	A
+46	chrM	10791	10792	alt-identical	T	C	C
+47	chrM	13118	13119	alt-identical	T	C	C
+48	chrM	13465	13466	alt-identical	A	G	G
+49	chrM	14928	14929	alt-identical	C	A	A

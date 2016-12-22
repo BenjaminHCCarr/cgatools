@@ -1,0 +1,47 @@
+#ASSEMBLY_ID	GS19240-180-36-21-ASM
+#SOFTWARE_VERSION	1.8.0.23
+#GENERATED_BY	ExportWorkflow&ReportEngine
+#GENERATED_AT	2010-07-14 14:19:05.195451
+#FORMAT_VERSION	1.3
+#GENOME_REFERENCE	NCBI build 36
+#SAMPLE	GS00028-DNA_C01
+#TYPE	SUMMARY-REPORT
+#DBSNP_BUILD	dbSNP build 130
+#GENE_ANNOTATIONS	NCBI build 36.3
+
+>name	value
+Gender	FEMALE
+Gross mapping yield (Gb)	179.10
+SNP Transitions/transversions	2.13701
+SNP het/hom ratio	1.933575429
+INS het/hom ratio	1.55600737
+DEL het/hom ratio	2.293360676
+SUB het/hom ratio	2.185581126
+SNP total count	4039103
+INS total count	231276
+DEL total count	246525
+SUB total count	83470
+SNP novel rate	0.0442838
+INS novel rate	0.299837
+DEL novel rate	0.33608
+SUB novel rate	0.41204
+Fully called genome fraction	0.95648461466
+Partially called genome fraction	0.00716272953352
+No-called genome fraction	0.0363526558063
+Synonymous SNP loci	11737
+Missense SNP loci	11048
+Nonsense SNP loci	124
+Nonstop SNP loci	24
+Frame-shifting INS loci	149
+Frame-shifting DEL loci	146
+Frame-shifting SUB loci	27
+Frame-preserving INS loci	110
+Frame-preserving DEL loci	147
+Frame-preserving SUB loci	273
+Frame-shifting/preserving ratio	0.607547169811
+Nonsyn/syn SNP ratio	0.941296753855
+Insertion/deletions ratio	0.938144204442
+Ins+del/SNP ratio	0.118293839003
+Coding insertion/deletions ratio	0.706827309237
+Coding SNP/all SNP ratio	0.00618280841068
+Coding (ins+del)/all (ins+del) ratio	0.00088949165029

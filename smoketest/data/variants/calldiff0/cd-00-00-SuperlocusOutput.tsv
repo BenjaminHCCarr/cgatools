@@ -1,0 +1,47 @@
+SuperlocusId	Chromosome	Begin	End	Classification	Reference	AllelesA	AllelesB
+1	chr1	85	87	alt-identical;ref-consistent	AC	GAC;AN	GAC;AN
+2	chr1	320	328	alt-identical;ref-consistent	ATTTTGGT	ATTCTGGT;?	ATTCTGGT;?
+3	chr1	1203	1204	alt-identical;alt-identical	C	T;T	T;T
+4	chr1	1874	1875	ref-identical;alt-identical	G	G;C	G;C
+5	chr1	2335	2336	alt-identical;alt-identical	G	A;A	A;A
+6	chr1	3262	3263	ref-identical;alt-identical	T	T;	T;
+7	chr1	3463	3464	ref-identical;alt-identical	C	C;T	C;T
+8	chr1	5081	5082	ref-identical;alt-identical	G	G;A	G;A
+9	chr1	6200	6200	alt-identical;alt-identical		GA;GA	GA;GA
+10	chr1	6596	6597	ref-identical;alt-identical	A	A;G	A;G
+11	chr1	6710	6714	alt-identical;alt-identical	TTTA	CTTA;TTCA	CTTA;TTCA
+12	chr2	761	762	ref-identical;alt-identical	C	C;A	C;A
+13	chr2	1064	1065	ref-identical;alt-identical	G	G;C	G;C
+14	chr2	1788	1789	alt-identical;alt-identical	T	A;A	A;A
+15	chr2	2622	2623	ref-identical;alt-identical	C	C;T	C;T
+16	chr2	2809	2809	alt-identical;alt-identical		A;A	A;A
+17	chr2	3079	3080	alt-identical;alt-identical	A	G;G	G;G
+18	chr2	3967	3968	ref-identical;alt-identical	C	C;T	C;T
+19	chr2	5008	5009	ref-identical;alt-identical	G	G;A	G;A
+20	chr2	5174	5175	ref-identical;alt-identical	T	T;C	T;C
+21	chr2	6127	6128	alt-identical;alt-identical	T	A;A	A;A
+22	chr2	7372	7373	ref-identical;alt-identical	C	C;T	C;T
+23	chr2	7604	7605	ref-identical;alt-identical	T	T;C	T;C
+24	chr2	7709	7710	ref-identical;alt-identical	A	A;G	A;G
+25	chr2	8842	8843	ref-identical;alt-identical	T	T;C	T;C
+26	chr2	9373	9374	ref-identical;alt-identical	A	A;G	A;G
+27	chr2	12457	12458	ref-identical;alt-identical	C	C;T	C;T
+28	chr2	13029	13030	ref-identical;alt-identical	T	T;C	T;C
+29	chr2	13951	13952	alt-identical;alt-identical	A	C;C	C;C
+30	chrM	363	363	alt-identical		A	A
+31	chrM	954	955	alt-identical	T	C	C
+32	chrM	3385	3386	alt-identical	A		
+33	chrM	3403	3406	alt-identical	CTA	TTG	TTG
+34	chrM	3659	3659	alt-identical		T	T
+35	chrM	4096	4097	alt-identical	C	G	G
+36	chrM	4567	4568	alt-identical	T	G	G
+37	chrM	4923	4924	alt-identical	A	G	G
+38	chrM	5993	5994	alt-identical	C	G	G
+39	chrM	10268	10269	alt-identical	C	T	T
+40	chrM	10337	10343	alt-identical	ATTAAT		
+41	chrM	10355	10356	alt-identical	C	A	A
+42	chrM	10601	10602	alt-identical	T	A	A
+43	chrM	10791	10792	alt-identical	T	C	C
+44	chrM	13118	13119	alt-identical	T	C	C
+45	chrM	13465	13466	alt-identical	A	G	G
+46	chrM	14928	14929	alt-identical	C	A	A

@@ -1,0 +1,140 @@
+SuperlocusId	File	SuperlocusClassification	CallClassification	locus	ploidy	allele	chromosome	begin	end	varType	reference	alleleSeq	varScoreVAF	varScoreEAF	varFilter	hapLink	xRef	alleleFreq	alternativeCalls
+1	A	alt-identical;ref-consistent	ref-identical;ref-identical	2	2	all	chr1	30	85	ref	=	=							
+1	A	alt-identical;ref-consistent	ref-identical	3	2	1	chr1	85	85	ref			48	48		1			
+1	A	alt-identical;ref-consistent	alt-identical	3	2	2	chr1	85	85	ins		G	62	62		2			
+1	A	alt-identical;ref-consistent	ref-identical;ref-identical	4	2	all	chr1	85	86	ref	=	=							
+1	A	alt-identical;ref-consistent	ref-consistent	5	2	1	chr1	86	87	no-call-rc	C	N	121	121		1			
+1	A	alt-identical;ref-consistent	ref-identical	5	2	2	chr1	86	87	ref	C	C	121	121		2			
+1	B	alt-identical;ref-consistent	ref-identical	3	2	1	chr1	84	84	ref			48	48		1			
+1	B	alt-identical;ref-consistent	alt-identical	3	2	2	chr1	84	84	ins		G	62	62		2			
+1	B	alt-identical;ref-consistent	ref-identical;ref-identical	4	2	all	chr1	84	86	ref	=	=							
+1	B	alt-identical;ref-consistent	ref-consistent	5	2	1	chr1	86	87	no-call-rc	C	N	121	121		1			
+1	B	alt-identical;ref-consistent	ref-identical	5	2	2	chr1	86	87	ref	C	C	121	121		2			
+2	A	ref-consistent;onlyA	ref-identical	7	2	1	chr1	320	323	ref	ATT	ATT	122	122					
+2	A	ref-consistent;onlyA	onlyA	7	2	1	chr1	323	324	snp	T	C	63	63					
+2	A	ref-consistent;onlyA	ref-identical	7	2	1	chr1	324	328	ref	TGGT	TGGT	116	116					
+2	A	ref-consistent;onlyA	ref-consistent	7	2	2	chr1	320	328	no-call	ATTTTGGT	?							
+2	B	ref-consistent;onlyA	ref-consistent;onlyA	6	2	all	chr1	87	610	ref	=	=							
+3	A	ref-identical;onlyB	ref-identical;onlyB	8	2	all	chr1	328	671	ref	=	=							
+3	B	ref-identical;onlyB	ref-identical	7	2	1	chr1	610	611	ref	C	=	241	241					
+3	B	ref-identical;onlyB	onlyB	7	2	2	chr1	610	611	snp	C	T	110	110					
+4	A	alt-identical;onlyA	onlyA	13	2	1	chr1	1203	1204	snp	C	T	101	101					
+4	A	alt-identical;onlyA	alt-identical	13	2	2	chr1	1203	1204	snp	C	T	121	121					
+4	B	alt-identical;onlyA	onlyA	13	2	1	chr1	1203	1204	ref	C	C	30	30					
+4	B	alt-identical;onlyA	alt-identical	13	2	2	chr1	1203	1204	snp	C	T	121	121					
+5	A	ref-identical;alt-identical	alt-identical	15	2	1	chr1	1874	1875	snp	G	C	120	120					
+5	A	ref-identical;alt-identical	ref-identical	15	2	2	chr1	1874	1875	ref	G	G	44	44					
+5	B	ref-identical;alt-identical	alt-identical	15	2	1	chr1	1874	1875	snp	G	C	120	120					
+5	B	ref-identical;alt-identical	ref-identical	15	2	2	chr1	1874	1875	ref	G	G	44	44					
+6	A	alt-identical;alt-identical	alt-identical	17	2	1	chr1	2335	2336	snp	G	A	120	120					
+6	A	alt-identical;alt-identical	alt-identical	17	2	2	chr1	2335	2336	snp	G	A	120	120					
+6	B	alt-identical;alt-identical	alt-identical	17	2	1	chr1	2335	2336	snp	G	A	120	120					
+6	B	alt-identical;alt-identical	alt-identical	17	2	2	chr1	2335	2336	snp	G	A	120	120					
+7	A	ref-identical;alt-identical	alt-identical	19	2	1	chr1	3262	3263	del	T		141	141					
+7	A	ref-identical;alt-identical	ref-identical	19	2	2	chr1	3262	3263	ref	T	T	141	141					
+7	B	ref-identical;alt-identical	alt-identical	19	2	1	chr1	3262	3263	del	T		141	141					
+7	B	ref-identical;alt-identical	ref-identical	19	2	2	chr1	3262	3263	ref	T	T	141	141					
+8	A	ref-identical;alt-identical	ref-identical	21	2	1	chr1	3463	3464	ref	C	C	217	217					
+8	A	ref-identical;alt-identical	alt-identical	21	2	2	chr1	3463	3464	snp	C	T	217	217					
+8	B	ref-identical;alt-identical	ref-identical	21	2	1	chr1	3463	3464	ref	C	C	217	217					
+8	B	ref-identical;alt-identical	alt-identical	21	2	2	chr1	3463	3464	snp	C	T	217	217					
+9	A	ref-identical;alt-identical	alt-identical	23	2	1	chr1	5081	5082	snp	G	A	181	181					
+9	A	ref-identical;alt-identical	ref-identical	23	2	2	chr1	5081	5082	ref	G	G	181	181					
+9	B	ref-identical;alt-identical	alt-identical	23	2	1	chr1	5081	5082	snp	G	A	181	181					
+9	B	ref-identical;alt-identical	ref-identical	23	2	2	chr1	5081	5082	ref	G	G	181	181					
+10	A	alt-identical;alt-identical	alt-identical	25	2	1	chr1	6200	6200	ins		GA	82	82					
+10	A	alt-identical;alt-identical	alt-identical	25	2	2	chr1	6200	6200	ins		GA	120	120					
+10	B	alt-identical;alt-identical	alt-identical	25	2	1	chr1	6200	6200	ins		GA	82	82					
+10	B	alt-identical;alt-identical	alt-identical	25	2	2	chr1	6200	6200	ins		GA	120	120					
+11	A	ref-identical;alt-identical	ref-identical	27	2	1	chr1	6596	6597	ref	A	A	105	105					
+11	A	ref-identical;alt-identical	alt-identical	27	2	2	chr1	6596	6597	snp	A	G	120	120					
+11	B	ref-identical;alt-identical	ref-identical	27	2	1	chr1	6596	6597	ref	A	A	105	105					
+11	B	ref-identical;alt-identical	alt-identical	27	2	2	chr1	6596	6597	snp	A	G	120	120					
+12	A	ploidy-mismatch	ploidy-mismatch;ploidy-mismatch	28	2	all	chr1	6597	6710	ref	=	=							
+12	B	ploidy-mismatch	ploidy-mismatch	30	1	1	chr1	6635	6636	snp	A	C	85	85					
+13	A	ploidy-mismatch	ploidy-mismatch;ploidy-mismatch	28	2	all	chr1	6597	6710	ref	=	=							
+13	B	ploidy-mismatch	ploidy-mismatch	33	1	1	chr1	6680	6681	snp	T	G	90	90					
+13	B	ploidy-mismatch	ploidy-mismatch;ploidy-mismatch	34	2	all	chr1	6681	6683	ref	=	=							
+13	B	ploidy-mismatch	ploidy-mismatch	35	1	1	chr1	6683	6684	del	A		120	120					
+14	A	phase-mismatch;phase-mismatch	alt-identical	29	2	1	chr1	6710	6711	snp	T	C	46	46		555			
+14	A	phase-mismatch;phase-mismatch	ref-identical	29	2	2	chr1	6710	6711	ref	T	T	55	55		556			
+14	A	phase-mismatch;phase-mismatch	ref-identical;ref-identical	30	2	all	chr1	6711	6712	ref	=	=							
+14	A	phase-mismatch;phase-mismatch	phase-mismatch	31	2	1	chr1	6712	6714	ref	TA	TA	27	27		555			
+14	A	phase-mismatch;phase-mismatch	phase-mismatch	31	2	2	chr1	6712	6714	sub	TA	CA	45	45		556			
+14	B	phase-mismatch;phase-mismatch	alt-identical	37	2	1	chr1	6710	6711	snp	T	C	46	46		123			
+14	B	phase-mismatch;phase-mismatch	ref-identical	37	2	2	chr1	6710	6711	ref	T	T	55	55		124			
+14	B	phase-mismatch;phase-mismatch	ref-identical;ref-identical	38	2	all	chr1	6711	6712	ref	=	=							
+14	B	phase-mismatch;phase-mismatch	phase-mismatch	39	2	1	chr1	6712	6714	ref	TA	TA	27	27		124			
+14	B	phase-mismatch;phase-mismatch	phase-mismatch	39	2	2	chr1	6712	6714	no-call-ri	TA	CN	45	45		123			
+15	A	ploidy-mismatch	ploidy-mismatch	4326	2	1	chr2	761	762	snp	C	A	117	117					
+15	A	ploidy-mismatch	ploidy-mismatch	4326	2	2	chr2	761	762	ref	C	C	117	117					
+16	A	ploidy-mismatch	ploidy-mismatch	4328	2	1	chr2	1064	1065	snp	G	C	114	114					
+16	A	ploidy-mismatch	ploidy-mismatch	4328	2	2	chr2	1064	1065	ref	G	G	114	114					
+17	A	ploidy-mismatch	ploidy-mismatch	4330	2	1	chr2	1788	1789	snp	T	A	54	54					
+17	A	ploidy-mismatch	ploidy-mismatch	4330	2	2	chr2	1788	1789	snp	T	A	120	120					
+18	A	ploidy-mismatch	ploidy-mismatch	4332	2	1	chr2	2622	2623	ref	C	C	118	118					
+18	A	ploidy-mismatch	ploidy-mismatch	4332	2	2	chr2	2622	2623	snp	C	T	126	126					
+19	A	ploidy-mismatch	ploidy-mismatch	4334	2	1	chr2	2809	2809	ins		A	80	80					
+19	A	ploidy-mismatch	ploidy-mismatch	4334	2	2	chr2	2809	2809	ins		A	118	118					
+20	A	ploidy-mismatch	ploidy-mismatch	4336	2	1	chr2	3079	3080	snp	A	G	120	120					
+20	A	ploidy-mismatch	ploidy-mismatch	4336	2	2	chr2	3079	3080	snp	A	G	120	120					
+21	A	ploidy-mismatch	ploidy-mismatch	4340	2	1	chr2	3967	3968	ref	C	C	157	157					
+21	A	ploidy-mismatch	ploidy-mismatch	4340	2	2	chr2	3967	3968	snp	C	T	157	157					
+22	A	ploidy-mismatch	ploidy-mismatch	4342	2	1	chr2	5008	5009	snp	G	A	128	128					
+22	A	ploidy-mismatch	ploidy-mismatch	4342	2	2	chr2	5008	5009	ref	G	G	112	112					
+23	A	ploidy-mismatch	ploidy-mismatch	4344	2	1	chr2	5174	5175	snp	T	C	122	122					
+23	A	ploidy-mismatch	ploidy-mismatch	4344	2	2	chr2	5174	5175	ref	T	T	122	122					
+24	A	ploidy-mismatch	ploidy-mismatch	4348	2	1	chr2	6127	6128	snp	T	A	85	85					
+24	A	ploidy-mismatch	ploidy-mismatch	4348	2	2	chr2	6127	6128	snp	T	A	125	125					
+25	A	ploidy-mismatch	ploidy-mismatch	4350	2	1	chr2	7372	7373	ref	C	C	126	126					
+25	A	ploidy-mismatch	ploidy-mismatch	4350	2	2	chr2	7372	7373	snp	C	T	117	117					
+26	A	ploidy-mismatch	ploidy-mismatch	4352	2	1	chr2	7604	7605	snp	T	C	127	127					
+26	A	ploidy-mismatch	ploidy-mismatch	4352	2	2	chr2	7604	7605	ref	T	T	127	127					
+27	A	ploidy-mismatch	ploidy-mismatch	4354	2	1	chr2	7709	7710	ref	A	A	120	120		463			
+27	A	ploidy-mismatch	ploidy-mismatch	4354	2	2	chr2	7709	7710	snp	A	G	120	120		464			
+28	A	ploidy-mismatch	ploidy-mismatch	4358	2	1	chr2	8842	8843	snp	T	C	121	121					
+28	A	ploidy-mismatch	ploidy-mismatch	4358	2	2	chr2	8842	8843	ref	T	T	121	121					
+29	A	ploidy-mismatch	ploidy-mismatch	4360	2	1	chr2	9373	9374	ref	A	A	127	127					
+29	A	ploidy-mismatch	ploidy-mismatch	4360	2	2	chr2	9373	9374	snp	A	G	127	127					
+30	A	ploidy-mismatch	ploidy-mismatch	4368	2	1	chr2	12457	12458	ref	C	C	124	124					
+30	A	ploidy-mismatch	ploidy-mismatch	4368	2	2	chr2	12457	12458	snp	C	T	124	124					
+31	A	ploidy-mismatch	ploidy-mismatch	4370	2	1	chr2	13029	13030	snp	T	C	121	121					
+31	A	ploidy-mismatch	ploidy-mismatch	4370	2	2	chr2	13029	13030	ref	T	T	121	121					
+32	A	ploidy-mismatch	ploidy-mismatch	4372	2	1	chr2	13951	13952	snp	A	C	347	347					
+32	A	ploidy-mismatch	ploidy-mismatch	4372	2	2	chr2	13951	13952	snp	A	C	347	347					
+33	A	alt-consistent	ref-consistent	5070	1	all	chrM	6	363	ref	=	=							
+33	A	alt-consistent	alt-consistent	5071	1	1	chrM	363	363	ins		A	87	87					
+33	B	alt-consistent	ref-consistent	5071	1	1	chrM	358	358	no-call		?	87	87					
+33	B	alt-consistent	ref-identical	5072	1	all	chrM	358	954	ref	=	=							
+34	A	alt-identical	alt-identical	5073	1	1	chrM	954	955	snp	T	C	146	146					
+34	B	alt-identical	alt-identical	5073	1	1	chrM	954	955	snp	T	C	146	146					
+35	A	alt-consistent	alt-consistent	5075	1	1	chrM	3385	3386	del	A		185	185					
+35	B	alt-consistent	ref-consistent	5075	1	1	chrM	3385	3386	no-call-rc	A	?	185	185					
+36	A	alt-consistent	alt-consistent	5077	1	1	chrM	3403	3406	sub	CTA	TTG	185	185					
+36	B	alt-consistent	alt-consistent	5077	1	1	chrM	3403	3406	no-call-ri	CTA	TNG	185	185					
+37	A	alt-identical	alt-identical	5079	1	1	chrM	3659	3659	ins		T	311	311					
+37	B	alt-identical	alt-identical	5079	1	1	chrM	3659	3659	ins		T	311	311					
+38	A	alt-identical	alt-identical	5081	1	1	chrM	4096	4097	snp	C	G	287	287					
+38	B	alt-identical	alt-identical	5081	1	1	chrM	4096	4097	snp	C	G	287	287					
+39	A	alt-identical	alt-identical	5083	1	1	chrM	4567	4568	snp	T	G	152	152					
+39	B	alt-identical	alt-identical	5083	1	1	chrM	4567	4568	snp	T	G	152	152					
+40	A	alt-identical	alt-identical	5085	1	1	chrM	4923	4924	snp	A	G	312	312					
+40	B	alt-identical	alt-identical	5085	1	1	chrM	4923	4924	snp	A	G	312	312					
+41	A	alt-identical	alt-identical	5087	1	1	chrM	5993	5994	snp	C	G	157	157					
+41	B	alt-identical	alt-identical	5087	1	1	chrM	5993	5994	snp	C	G	157	157					
+42	A	alt-identical	alt-identical	5089	1	1	chrM	10268	10269	snp	C	T	220	220					
+42	B	alt-identical	alt-identical	5089	1	1	chrM	10268	10269	snp	C	T	220	220					
+43	A	alt-identical	alt-identical	5091	1	1	chrM	10337	10343	del	ATTAAT		207	207					
+43	B	alt-identical	alt-identical	5091	1	1	chrM	10337	10343	del	ATTAAT		207	207					
+44	A	alt-identical	alt-identical	5093	1	1	chrM	10355	10356	snp	C	A	207	207					
+44	B	alt-identical	alt-identical	5093	1	1	chrM	10355	10356	snp	C	A	207	207					
+45	A	alt-identical	alt-identical	5095	1	1	chrM	10601	10602	snp	T	A	186	186					
+45	B	alt-identical	alt-identical	5095	1	1	chrM	10601	10602	snp	T	A	186	186					
+46	A	alt-identical	alt-identical	5097	1	1	chrM	10791	10792	snp	T	C	125	125					
+46	B	alt-identical	alt-identical	5097	1	1	chrM	10791	10792	snp	T	C	125	125					
+47	A	alt-identical	alt-identical	5099	1	1	chrM	13118	13119	snp	T	C	278	278					
+47	B	alt-identical	alt-identical	5099	1	1	chrM	13118	13119	snp	T	C	278	278					
+48	A	alt-identical	alt-identical	5101	1	1	chrM	13465	13466	snp	A	G	221	221					
+48	B	alt-identical	alt-identical	5101	1	1	chrM	13465	13466	snp	A	G	221	221					
+49	A	alt-identical	alt-identical	5103	1	1	chrM	14928	14929	snp	C	A	229	229					
+49	B	alt-identical	alt-identical	5103	1	1	chrM	14928	14929	snp	C	A	229	229					

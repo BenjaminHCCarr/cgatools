@@ -1,0 +1,18 @@
+#GENERATED_BY	cgatools
+#GENERATED_AT	2012-Oct-18 13:38:01.231833
+#CGATOOLS_VERSION	0.0.0
+#FORMAT_VERSION	2.2
+#GENOME_REFERENCE	NCBI build 37
+#SAMPLE	GS00258-DNA_H01
+#TYPE	SV-EVENTS
+#SOFTWARE_VERSION	0.0.0.0
+
+>EventId	Type	RelatedJunctionIds	MatePairCounts	FrequenciesInBaselineGenomeSet	OriginRegionChr	OriginRegionBegin	OriginRegionEnd	OriginRegionLength	OriginRegionStrand	DestinationRegionChr	DestinationRegionBegin	DestinationRegionEnd	DestinationRegionLength	DestinationRegionStrand	DisruptedGenes	ContainedGenes	GeneFusions	RelatedMobileElement	MobileElementChr	MobileElementBegin	MobileElementEnd	MobileElementStrand
+1	deletion	1	42	0.10	chr1	100	500	400	+													
+2	tandem-duplication	2	42	0.10	chr1	2000	2500	500	+													
+3	probable-inversion	3	42	0.10	chr1	4000	4500	500	-													
+4	inversion	4;5	42;42	0.10;0.10	chr1	6002	6500	498	-	chr1	6000	6495	495	+								
+5	complex	6;7;8	42;42;42	0.10;0.10;0.10											ABCD							
+6	interchromosomal	9	42	0.10	chr1	14000	14000	0	+	chr2	1000	1000	0	+								
+7	distal-duplication	10;11	42;42	0.10;0.10	chr1	16000	18000	2000	+	chr2	2995	3000	5	+								
+8	distal-duplication	12;13	42;42	0.10;0.10	chr1	20000	22000	2000	-	chr2	3995	4000	5	+								

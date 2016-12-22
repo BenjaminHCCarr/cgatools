@@ -1,0 +1,48 @@
+variantId	chromosome	begin	end	varType	reference	alleleSeq	xRef
+1	chr1	84	84	ins		G	
+2	chr1	323	324	snp	T	C	
+3	chr1	1203	1204	snp	C	T	
+4	chr1	1874	1875	snp	G	C	
+5	chr1	2335	2336	snp	G	A	
+6	chr1	3258	3259	del	T		
+7	chr1	3463	3464	snp	C	T	
+8	chr1	5081	5082	snp	G	A	
+9	chr1	6200	6200	ins		GA	
+10	chr1	6596	6597	snp	A	G	
+11	chr1	6710	6711	snp	T	C	
+12	chr1	6712	6713	snp	T	C	
+13	chr2	761	762	snp	C	A	
+14	chr2	1064	1065	snp	G	C	
+15	chr2	1788	1789	snp	T	A	
+16	chr2	2622	2623	snp	C	T	
+17	chr2	2808	2808	ins		A	
+18	chr2	3079	3080	snp	A	G	
+19	chr2	3967	3968	snp	C	T	
+20	chr2	5008	5009	snp	G	A	
+21	chr2	5174	5175	snp	T	C	
+22	chr2	6127	6128	snp	T	A	
+23	chr2	7372	7373	snp	C	T	
+24	chr2	7604	7605	snp	T	C	
+25	chr2	7709	7710	snp	A	G	
+26	chr2	8842	8843	snp	T	C	
+27	chr2	9373	9374	snp	A	G	
+28	chr2	12457	12458	snp	C	T	
+29	chr2	13029	13030	snp	T	C	
+30	chr2	13951	13952	snp	A	C	
+31	chrM	358	358	ins		A	
+32	chrM	954	955	snp	T	C	
+33	chrM	3381	3382	del	A		
+34	chrM	3403	3406	sub	CTA	TTG	
+35	chrM	3658	3658	ins		T	
+36	chrM	4096	4097	snp	C	G	
+37	chrM	4567	4568	snp	T	G	
+38	chrM	4923	4924	snp	A	G	
+39	chrM	5993	5994	snp	C	G	
+40	chrM	10268	10269	snp	C	T	
+41	chrM	10336	10342	del	TATTAA		
+42	chrM	10355	10356	snp	C	A	
+43	chrM	10601	10602	snp	T	A	
+44	chrM	10791	10792	snp	T	C	
+45	chrM	13118	13119	snp	T	C	
+46	chrM	13465	13466	snp	A	G	
+47	chrM	14928	14929	snp	C	A	

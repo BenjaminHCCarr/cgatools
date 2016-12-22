@@ -1,0 +1,155 @@
+SuperlocusId	File	LocusClassification	LocusDiffClassification	locus	ploidy	allele	chromosome	begin	end	varType	reference	alleleSeq	varScoreVAF	varScoreEAF	varFilter	hapLink	xRef	alleleFreq	alternativeCalls
+1	A	het-ins	ref-identical;alt-identical	3	2	1	chr1	85	85	ins		G	62	62		2			
+1	A	het-ins	ref-identical;alt-identical	3	2	2	chr1	85	85	ref			48	48		1			
+1	B	het-ins	ref-identical;alt-identical	3	2	1	chr1	85	85	ins		G	62	62		2			
+1	B	het-ins	ref-identical;alt-identical	3	2	2	chr1	85	85	ref			48	48		1			
+2	A	no-call-snp	alt-identical;ref-consistent	7	2	1	chr1	320	328	snp	ATTTTGGT	ATTCTGGT	63	63				;;	
+2	A	no-call-snp	alt-identical;ref-consistent	7	2	2	chr1	320	328	no-call	ATTTTGGT	?							
+2	B	no-call-snp	alt-identical;ref-consistent	7	2	1	chr1	320	328	snp	ATTTTGGT	ATTCTGGT	63	63				;;	
+2	B	no-call-snp	alt-identical;ref-consistent	7	2	2	chr1	320	328	no-call	ATTTTGGT	?							
+3	A	hom-snp	alt-identical;alt-identical	13	2	1	chr1	1203	1204	snp	C	T	101	101					
+3	A	hom-snp	alt-identical;alt-identical	13	2	2	chr1	1203	1204	snp	C	T	121	121					
+3	B	hom-snp	alt-identical;alt-identical	13	2	1	chr1	1203	1204	snp	C	T	101	101					
+3	B	hom-snp	alt-identical;alt-identical	13	2	2	chr1	1203	1204	snp	C	T	121	121					
+4	A	het-snp	ref-identical;alt-identical	15	2	1	chr1	1874	1875	snp	G	C	120	120					
+4	A	het-snp	ref-identical;alt-identical	15	2	2	chr1	1874	1875	ref	G	G	44	44					
+4	B	het-snp	ref-identical;alt-identical	15	2	1	chr1	1874	1875	snp	G	C	120	120					
+4	B	het-snp	ref-identical;alt-identical	15	2	2	chr1	1874	1875	ref	G	G	44	44					
+5	A	hom-snp	alt-identical;alt-identical	17	2	1	chr1	2335	2336	snp	G	A	120	120					
+5	A	hom-snp	alt-identical;alt-identical	17	2	2	chr1	2335	2336	snp	G	A	120	120					
+5	B	hom-snp	alt-identical;alt-identical	17	2	1	chr1	2335	2336	snp	G	A	120	120					
+5	B	hom-snp	alt-identical;alt-identical	17	2	2	chr1	2335	2336	snp	G	A	120	120					
+6	A	het-del	ref-identical;alt-identical	19	2	1	chr1	3262	3263	del	T		141	141					
+6	A	het-del	ref-identical;alt-identical	19	2	2	chr1	3262	3263	ref	T	T	141	141					
+6	B	het-del	ref-identical;alt-identical	19	2	1	chr1	3262	3263	del	T		141	141					
+6	B	het-del	ref-identical;alt-identical	19	2	2	chr1	3262	3263	ref	T	T	141	141					
+7	A	het-snp	ref-identical;alt-identical	21	2	1	chr1	3463	3464	snp	C	T	217	217					
+7	A	het-snp	ref-identical;alt-identical	21	2	2	chr1	3463	3464	ref	C	C	217	217					
+7	B	het-snp	ref-identical;alt-identical	21	2	1	chr1	3463	3464	snp	C	T	217	217					
+7	B	het-snp	ref-identical;alt-identical	21	2	2	chr1	3463	3464	ref	C	C	217	217					
+8	A	het-snp	ref-identical;alt-identical	23	2	1	chr1	5081	5082	snp	G	A	181	181					
+8	A	het-snp	ref-identical;alt-identical	23	2	2	chr1	5081	5082	ref	G	G	181	181					
+8	B	het-snp	ref-identical;alt-identical	23	2	1	chr1	5081	5082	snp	G	A	181	181					
+8	B	het-snp	ref-identical;alt-identical	23	2	2	chr1	5081	5082	ref	G	G	181	181					
+9	A	hom-ins	alt-identical;alt-identical	25	2	1	chr1	6200	6200	ins		GA	82	82					
+9	A	hom-ins	alt-identical;alt-identical	25	2	2	chr1	6200	6200	ins		GA	120	120					
+9	B	hom-ins	alt-identical;alt-identical	25	2	1	chr1	6200	6200	ins		GA	82	82					
+9	B	hom-ins	alt-identical;alt-identical	25	2	2	chr1	6200	6200	ins		GA	120	120					
+10	A	het-snp	ref-identical;alt-identical	27	2	1	chr1	6596	6597	snp	A	G	120	120					
+10	A	het-snp	ref-identical;alt-identical	27	2	2	chr1	6596	6597	ref	A	A	105	105					
+10	B	het-snp	ref-identical;alt-identical	27	2	1	chr1	6596	6597	snp	A	G	120	120					
+10	B	het-snp	ref-identical;alt-identical	27	2	2	chr1	6596	6597	ref	A	A	105	105					
+11	A	het-snp	ref-identical;alt-identical	29	2	1	chr1	6710	6711	snp	T	C	46	46		555			
+11	A	het-snp	ref-identical;alt-identical	29	2	2	chr1	6710	6711	ref	T	T	55	55		556			
+11	A	het-sub	ref-identical;alt-identical	31	2	1	chr1	6712	6714	sub	TA	CA	45	45		556			
+11	A	het-sub	ref-identical;alt-identical	31	2	2	chr1	6712	6714	ref	TA	TA	27	27		555			
+11	B	het-snp	ref-identical;alt-identical	29	2	1	chr1	6710	6711	snp	T	C	46	46		555			
+11	B	het-snp	ref-identical;alt-identical	29	2	2	chr1	6710	6711	ref	T	T	55	55		556			
+11	B	het-sub	ref-identical;alt-identical	31	2	1	chr1	6712	6714	sub	TA	CA	45	45		556			
+11	B	het-sub	ref-identical;alt-identical	31	2	2	chr1	6712	6714	ref	TA	TA	27	27		555			
+12	A	het-snp	ref-identical;alt-identical	4326	2	1	chr2	761	762	snp	C	A	117	117					
+12	A	het-snp	ref-identical;alt-identical	4326	2	2	chr2	761	762	ref	C	C	117	117					
+12	B	het-snp	ref-identical;alt-identical	4326	2	1	chr2	761	762	snp	C	A	117	117					
+12	B	het-snp	ref-identical;alt-identical	4326	2	2	chr2	761	762	ref	C	C	117	117					
+13	A	het-snp	ref-identical;alt-identical	4328	2	1	chr2	1064	1065	snp	G	C	114	114					
+13	A	het-snp	ref-identical;alt-identical	4328	2	2	chr2	1064	1065	ref	G	G	114	114					
+13	B	het-snp	ref-identical;alt-identical	4328	2	1	chr2	1064	1065	snp	G	C	114	114					
+13	B	het-snp	ref-identical;alt-identical	4328	2	2	chr2	1064	1065	ref	G	G	114	114					
+14	A	hom-snp	alt-identical;alt-identical	4330	2	1	chr2	1788	1789	snp	T	A	54	54					
+14	A	hom-snp	alt-identical;alt-identical	4330	2	2	chr2	1788	1789	snp	T	A	120	120					
+14	B	hom-snp	alt-identical;alt-identical	4330	2	1	chr2	1788	1789	snp	T	A	54	54					
+14	B	hom-snp	alt-identical;alt-identical	4330	2	2	chr2	1788	1789	snp	T	A	120	120					
+15	A	het-snp	ref-identical;alt-identical	4332	2	1	chr2	2622	2623	snp	C	T	126	126					
+15	A	het-snp	ref-identical;alt-identical	4332	2	2	chr2	2622	2623	ref	C	C	118	118					
+15	B	het-snp	ref-identical;alt-identical	4332	2	1	chr2	2622	2623	snp	C	T	126	126					
+15	B	het-snp	ref-identical;alt-identical	4332	2	2	chr2	2622	2623	ref	C	C	118	118					
+16	A	hom-ins	alt-identical;alt-identical	4334	2	1	chr2	2809	2809	ins		A	80	80					
+16	A	hom-ins	alt-identical;alt-identical	4334	2	2	chr2	2809	2809	ins		A	118	118					
+16	B	hom-ins	alt-identical;alt-identical	4334	2	1	chr2	2809	2809	ins		A	80	80					
+16	B	hom-ins	alt-identical;alt-identical	4334	2	2	chr2	2809	2809	ins		A	118	118					
+17	A	hom-snp	alt-identical;alt-identical	4336	2	1	chr2	3079	3080	snp	A	G	120	120					
+17	A	hom-snp	alt-identical;alt-identical	4336	2	2	chr2	3079	3080	snp	A	G	120	120					
+17	B	hom-snp	alt-identical;alt-identical	4336	2	1	chr2	3079	3080	snp	A	G	120	120					
+17	B	hom-snp	alt-identical;alt-identical	4336	2	2	chr2	3079	3080	snp	A	G	120	120					
+18	A	het-snp	ref-identical;alt-identical	4340	2	1	chr2	3967	3968	snp	C	T	157	157					
+18	A	het-snp	ref-identical;alt-identical	4340	2	2	chr2	3967	3968	ref	C	C	157	157					
+18	B	het-snp	ref-identical;alt-identical	4340	2	1	chr2	3967	3968	snp	C	T	157	157					
+18	B	het-snp	ref-identical;alt-identical	4340	2	2	chr2	3967	3968	ref	C	C	157	157					
+19	A	het-snp	ref-identical;alt-identical	4342	2	1	chr2	5008	5009	snp	G	A	128	128					
+19	A	het-snp	ref-identical;alt-identical	4342	2	2	chr2	5008	5009	ref	G	G	112	112					
+19	B	het-snp	ref-identical;alt-identical	4342	2	1	chr2	5008	5009	snp	G	A	128	128					
+19	B	het-snp	ref-identical;alt-identical	4342	2	2	chr2	5008	5009	ref	G	G	112	112					
+20	A	het-snp	ref-identical;alt-identical	4344	2	1	chr2	5174	5175	snp	T	C	122	122					
+20	A	het-snp	ref-identical;alt-identical	4344	2	2	chr2	5174	5175	ref	T	T	122	122					
+20	B	het-snp	ref-identical;alt-identical	4344	2	1	chr2	5174	5175	snp	T	C	122	122					
+20	B	het-snp	ref-identical;alt-identical	4344	2	2	chr2	5174	5175	ref	T	T	122	122					
+21	A	hom-snp	alt-identical;alt-identical	4348	2	1	chr2	6127	6128	snp	T	A	85	85					
+21	A	hom-snp	alt-identical;alt-identical	4348	2	2	chr2	6127	6128	snp	T	A	125	125					
+21	B	hom-snp	alt-identical;alt-identical	4348	2	1	chr2	6127	6128	snp	T	A	85	85					
+21	B	hom-snp	alt-identical;alt-identical	4348	2	2	chr2	6127	6128	snp	T	A	125	125					
+22	A	het-snp	ref-identical;alt-identical	4350	2	1	chr2	7372	7373	snp	C	T	117	117					
+22	A	het-snp	ref-identical;alt-identical	4350	2	2	chr2	7372	7373	ref	C	C	126	126					
+22	B	het-snp	ref-identical;alt-identical	4350	2	1	chr2	7372	7373	snp	C	T	117	117					
+22	B	het-snp	ref-identical;alt-identical	4350	2	2	chr2	7372	7373	ref	C	C	126	126					
+23	A	het-snp	ref-identical;alt-identical	4352	2	1	chr2	7604	7605	snp	T	C	127	127					
+23	A	het-snp	ref-identical;alt-identical	4352	2	2	chr2	7604	7605	ref	T	T	127	127					
+23	B	het-snp	ref-identical;alt-identical	4352	2	1	chr2	7604	7605	snp	T	C	127	127					
+23	B	het-snp	ref-identical;alt-identical	4352	2	2	chr2	7604	7605	ref	T	T	127	127					
+24	A	het-snp	ref-identical;alt-identical	4354	2	1	chr2	7709	7710	snp	A	G	120	120		464			
+24	A	het-snp	ref-identical;alt-identical	4354	2	2	chr2	7709	7710	ref	A	A	120	120		463			
+24	B	het-snp	ref-identical;alt-identical	4354	2	1	chr2	7709	7710	snp	A	G	120	120		464			
+24	B	het-snp	ref-identical;alt-identical	4354	2	2	chr2	7709	7710	ref	A	A	120	120		463			
+25	A	het-snp	ref-identical;alt-identical	4358	2	1	chr2	8842	8843	snp	T	C	121	121					
+25	A	het-snp	ref-identical;alt-identical	4358	2	2	chr2	8842	8843	ref	T	T	121	121					
+25	B	het-snp	ref-identical;alt-identical	4358	2	1	chr2	8842	8843	snp	T	C	121	121					
+25	B	het-snp	ref-identical;alt-identical	4358	2	2	chr2	8842	8843	ref	T	T	121	121					
+26	A	het-snp	ref-identical;alt-identical	4360	2	1	chr2	9373	9374	snp	A	G	127	127					
+26	A	het-snp	ref-identical;alt-identical	4360	2	2	chr2	9373	9374	ref	A	A	127	127					
+26	B	het-snp	ref-identical;alt-identical	4360	2	1	chr2	9373	9374	snp	A	G	127	127					
+26	B	het-snp	ref-identical;alt-identical	4360	2	2	chr2	9373	9374	ref	A	A	127	127					
+27	A	het-snp	ref-identical;alt-identical	4368	2	1	chr2	12457	12458	snp	C	T	124	124					
+27	A	het-snp	ref-identical;alt-identical	4368	2	2	chr2	12457	12458	ref	C	C	124	124					
+27	B	het-snp	ref-identical;alt-identical	4368	2	1	chr2	12457	12458	snp	C	T	124	124					
+27	B	het-snp	ref-identical;alt-identical	4368	2	2	chr2	12457	12458	ref	C	C	124	124					
+28	A	het-snp	ref-identical;alt-identical	4370	2	1	chr2	13029	13030	snp	T	C	121	121					
+28	A	het-snp	ref-identical;alt-identical	4370	2	2	chr2	13029	13030	ref	T	T	121	121					
+28	B	het-snp	ref-identical;alt-identical	4370	2	1	chr2	13029	13030	snp	T	C	121	121					
+28	B	het-snp	ref-identical;alt-identical	4370	2	2	chr2	13029	13030	ref	T	T	121	121					
+29	A	hom-snp	alt-identical;alt-identical	4372	2	1	chr2	13951	13952	snp	A	C	347	347					
+29	A	hom-snp	alt-identical;alt-identical	4372	2	2	chr2	13951	13952	snp	A	C	347	347					
+29	B	hom-snp	alt-identical;alt-identical	4372	2	1	chr2	13951	13952	snp	A	C	347	347					
+29	B	hom-snp	alt-identical;alt-identical	4372	2	2	chr2	13951	13952	snp	A	C	347	347					
+30	A	hap-ins	alt-identical	5071	1	1	chrM	363	363	ins		A	87	87					
+30	B	hap-ins	alt-identical	5071	1	1	chrM	363	363	ins		A	87	87					
+31	A	hap-snp	alt-identical	5073	1	1	chrM	954	955	snp	T	C	146	146					
+31	B	hap-snp	alt-identical	5073	1	1	chrM	954	955	snp	T	C	146	146					
+32	A	hap-del	alt-identical	5075	1	1	chrM	3385	3386	del	A		185	185					
+32	B	hap-del	alt-identical	5075	1	1	chrM	3385	3386	del	A		185	185					
+33	A	hap-sub	alt-identical	5077	1	1	chrM	3403	3406	sub	CTA	TTG	185	185					
+33	B	hap-sub	alt-identical	5077	1	1	chrM	3403	3406	sub	CTA	TTG	185	185					
+34	A	hap-ins	alt-identical	5079	1	1	chrM	3659	3659	ins		T	311	311					
+34	B	hap-ins	alt-identical	5079	1	1	chrM	3659	3659	ins		T	311	311					
+35	A	hap-snp	alt-identical	5081	1	1	chrM	4096	4097	snp	C	G	287	287					
+35	B	hap-snp	alt-identical	5081	1	1	chrM	4096	4097	snp	C	G	287	287					
+36	A	hap-snp	alt-identical	5083	1	1	chrM	4567	4568	snp	T	G	152	152					
+36	B	hap-snp	alt-identical	5083	1	1	chrM	4567	4568	snp	T	G	152	152					
+37	A	hap-snp	alt-identical	5085	1	1	chrM	4923	4924	snp	A	G	312	312					
+37	B	hap-snp	alt-identical	5085	1	1	chrM	4923	4924	snp	A	G	312	312					
+38	A	hap-snp	alt-identical	5087	1	1	chrM	5993	5994	snp	C	G	157	157					
+38	B	hap-snp	alt-identical	5087	1	1	chrM	5993	5994	snp	C	G	157	157					
+39	A	hap-snp	alt-identical	5089	1	1	chrM	10268	10269	snp	C	T	220	220					
+39	B	hap-snp	alt-identical	5089	1	1	chrM	10268	10269	snp	C	T	220	220					
+40	A	hap-del	alt-identical	5091	1	1	chrM	10337	10343	del	ATTAAT		207	207					
+40	B	hap-del	alt-identical	5091	1	1	chrM	10337	10343	del	ATTAAT		207	207					
+41	A	hap-snp	alt-identical	5093	1	1	chrM	10355	10356	snp	C	A	207	207					
+41	B	hap-snp	alt-identical	5093	1	1	chrM	10355	10356	snp	C	A	207	207					
+42	A	hap-snp	alt-identical	5095	1	1	chrM	10601	10602	snp	T	A	186	186					
+42	B	hap-snp	alt-identical	5095	1	1	chrM	10601	10602	snp	T	A	186	186					
+43	A	hap-snp	alt-identical	5097	1	1	chrM	10791	10792	snp	T	C	125	125					
+43	B	hap-snp	alt-identical	5097	1	1	chrM	10791	10792	snp	T	C	125	125					
+44	A	hap-snp	alt-identical	5099	1	1	chrM	13118	13119	snp	T	C	278	278					
+44	B	hap-snp	alt-identical	5099	1	1	chrM	13118	13119	snp	T	C	278	278					
+45	A	hap-snp	alt-identical	5101	1	1	chrM	13465	13466	snp	A	G	221	221					
+45	B	hap-snp	alt-identical	5101	1	1	chrM	13465	13466	snp	A	G	221	221					
+46	A	hap-snp	alt-identical	5103	1	1	chrM	14928	14929	snp	C	A	229	229					
+46	B	hap-snp	alt-identical	5103	1	1	chrM	14928	14929	snp	C	A	229	229					

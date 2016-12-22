@@ -1,0 +1,22 @@
+#FORMAT_VERSION	1.8
+#GENOME_REFERENCE	NCBI build 37
+#SAMPLE	GS00258-DNA_H01
+#TYPE	JUNCTIONS
+#GENERATED_BY	cgatools
+#GENERATED_AT	2011-Aug-05 15:10:07.647950
+#CGATOOLS_VERSION	0.0.0
+
+>Id	LeftChr	LeftPosition	LeftStrand	LeftLength	RightChr	RightPosition	RightStrand	RightLength	StrandConsistent	Interchromosomal	Distance	DiscordantMatePairAlignments	JunctionSequenceResolved	TransitionSequence	TransitionLength	LeftRepeatClassification	RightRepeatClassification	LeftGenes	RightGenes	XRef	DeletedTransposableElement	KnownUnderrepresentedRepeat	FrequencyInBaselineGenomeSet	AssembledSequence	EventId	Type	RelatedJunctions
+1	chr1	100	+	321	chr1	500	+	345	Y	N	400	42	Y		0								0.10		1	deletion	
+2	chr1	2000	-	321	chr1	2500	-	345	Y	N	500	42	Y		0								0.10		2	tandem-duplication	
+3	chr1	4000	+	321	chr1	4500	-	345	N	N	500	42	Y		0								0.10		3	probable-inversion	
+4	chr1	6000	+	321	chr1	6500	-	345	N	N	500	42	Y		0								0.10		4	inversion	5
+5	chr1	6002	-	321	chr1	6495	+	345	N	N	493	42	Y		0								0.10		4	inversion	4
+6	chr1	8000	+	321	chr1	9000	+	345	Y	N	1000	42	Y		0								0.10		5	complex	7;8
+7	chr1	8600	+	321	chr1	9600	+	345	Y	N	1000	42	Y		0								0.10		5	complex	6;8
+8	chr1	10200	+	321	chr1	11200	+	345	Y	N	1000	42	Y		0								0.10		5	complex	6;7
+9	chr1	14000	+	321	chr2	1000	+	345	Y	Y		42	Y		0								0.10		6	interchromosomal	
+10	chr1	16000	-	321	chr2	3000	-	345	Y	Y		42	Y		0								0.10		7	distal-duplication	11
+11	chr1	18000	+	321	chr2	2995	+	345	Y	Y		42	Y		0								0.10		7	distal-duplication	10
+12	chr1	20000	-	321	chr2	4000	+	345	N	Y		42	Y		0								0.10		8	distal-duplication	13
+13	chr1	22000	+	321	chr2	3995	-	345	N	Y		42	Y		0								0.10		8	distal-duplication	12

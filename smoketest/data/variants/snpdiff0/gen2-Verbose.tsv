@@ -1,0 +1,41 @@
+RsVal	DbSnpSnps	Chromosome	Offset0Based	GenotypesStrand	Genotypes	Reference	VariantFile	locus	ploidy	allele	chromosome	begin	end	varType	reference	alleleSeq	varScoreVAF	varScoreEAF	varFilter	hapLink	xRef	alleleFreq	alternativeCalls
+rs123	C/T	chr1	0	+	TT	T	N	1	2	1	chr1	0	1	no-call	T	?							
+rs123	C/T	chr1	0	+	TT	T	N	1	2	2	chr1	0	30	no-call	TTTAACAGAAAAATGAGCATGGAAAGGTAA	?							
+rs123	C/T	chr1	20	-	GG	G	G	1	2	1	chr1	1	30	ref	TTAACAGAAAAATGAGCATGGAAAGGTAA	TTAACAGAAAAATGAGCATGGAAAGGTAA	35	35					
+rs123	C/T	chr1	20	-	GG	G	N	1	2	2	chr1	0	30	no-call	TTTAACAGAAAAATGAGCATGGAAAGGTAA	?							
+rs123	C/T	chr1	84	+	GG	G	G	2	2	all	chr1	30	85	ref	=	=							
+rs123	C/T	chr1	84	+	GG	G	G	2	2	all	chr1	30	85	ref	=	=							
+rs123	C/T	chr1	85	-	GA	A	A	4	2	all	chr1	85	86	ref	=	=							
+rs123	C/T	chr1	85	-	GA	A	A	4	2	all	chr1	85	86	ref	=	=							
+rs123	C/T	chr1	86	-	CN	C	C	5	2	2	chr1	86	87	ref	C	C	121	121		2			
+rs123	C/T	chr1	86	-	CN	C	N	5	2	1	chr1	86	87	no-call-rc	C	N	121	121		1			
+rs123	C/T	chr1	323	+	AA	T	C	7	2	1	chr1	323	324	snp	T	C	63	63					
+rs123	C/T	chr1	323	+	AA	T	N	7	2	2	chr1	320	328	no-call	ATTTTGGT	?							
+rs123	C/T	chr1	600	+	.-	A	A	8	2	all	chr1	328	671	ref	=	=							
+rs123	C/T	chr1	600	+	.-	A	A	8	2	all	chr1	328	671	ref	=	=							
+rs123	C/T	chr1	1203	+	AT	C	T	13	2	1	chr1	1203	1204	snp	C	T	101	101					
+rs123	C/T	chr1	1203	+	AT	C	T	13	2	2	chr1	1203	1204	snp	C	T	121	121					
+rs123	C/T	chr1	2335	+	AA	G	A	17	2	1	chr1	2335	2336	snp	G	A	120	120					
+rs123	C/T	chr1	2335	+	AA	G	A	17	2	2	chr1	2335	2336	snp	G	A	120	120					
+rs123	C/T	chr1	3262	+	TT	T	-	19	2	1	chr1	3262	3263	del	T		141	141					
+rs123	C/T	chr1	3262	+	TT	T	T	19	2	2	chr1	3262	3263	ref	T	T	141	141					
+rs123	C/T	chr2	761	-	CT	C	A	4326	2	1	chr2	761	762	snp	C	A	117	117					
+rs123	C/T	chr2	761	-	CT	C	C	4326	2	2	chr2	761	762	ref	C	C	117	117					
+rs123	C/T	chr2	3267	-	AA	T	N	4338	2	all	chr2	3266	3268	no-call	=	?							
+rs123	C/T	chr2	3267	-	AA	T	N	4338	2	all	chr2	3266	3268	no-call	=	?							
+rs123	C/T	chr2	5008	+	AA	G	A	4342	2	1	chr2	5008	5009	snp	G	A	128	128					
+rs123	C/T	chr2	5008	+	AA	G	G	4342	2	2	chr2	5008	5009	ref	G	G	112	112					
+rs123	C/T	chrM	0	+	GG	G	N	5069	1	all	chrM	0	6	no-call	=	?							
+rs123	C/T	chrM	20	+	CC	A	A	5070	1	all	chrM	6	363	ref	=	=							
+rs123	C/T	chrM	950	+	CA	T	T	5072	1	all	chrM	363	954	ref	=	=							
+rs123	C/T	chrM	954	-	GN	T	C	5073	1	1	chrM	954	955	snp	T	C	146	146					
+rs123	C/T	chrM	3385	+	NN	A	-	5075	1	1	chrM	3385	3386	del	A		185	185					
+rs123	C/T	chrM	3386	+	NN	T	T	5076	1	all	chrM	3386	3403	ref	=	=							
+rs123	C/T	chrM	3402	-	AC	A	A	5076	1	all	chrM	3386	3403	ref	=	=							
+rs123	C/T	chrM	3403	+	CA	C	T	5077	1	1	chrM	3403	3406	sub	CTA	TTG	185	185					
+rs123	C/T	chrM	3404	+	CC	T	.	5077	1	1	chrM	3403	3406	sub	CTA	TTG	185	185					
+rs123	C/T	chrM	3405	-	CC	A	G	5077	1	1	chrM	3403	3406	sub	CTA	TTG	185	185					
+rs123	C/T	chrM	3406	+	GG	C	C	5078	1	all	chrM	3406	3659	ref	=	=							
+rs123	C/T	chrM	4096	+	TT	C	G	5081	1	1	chrM	4096	4097	snp	C	G	287	287					
+rs123	C/T	chrM	10340	+	TT	A	-	5091	1	1	chrM	10337	10343	del	ATTAAT		207	207					
+rs123	C/T	chrM	16566	+	GG	C	N	5105	1	all	chrM	16565	16571	no-call	=	?							

@@ -1,0 +1,58 @@
+Locus stats for file A by pct of LocusClassification
+File	LocusClassification	alt-identical	ploidy-mismatch;ploidy-mismatch	ref-identical;alt-identical	alt-consistent	alt-identical;alt-identical	ploidy-mismatch	phase-mismatch;phase-mismatch	alt-identical;onlyA	ref-consistent;onlyA	ref-identical;onlyB	other	total
+A	hap-del	50.00%	0.00%	0.00%	50.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	hap-ins	50.00%	0.00%	0.00%	50.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	hap-snp	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	hap-sub	0.00%	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	het-del	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	het-ins	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	het-snp	0.00%	72.22%	27.78%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	het-sub	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	hom-ins	0.00%	50.00%	0.00%	0.00%	50.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+A	hom-snp	0.00%	66.67%	0.00%	0.00%	16.67%	0.00%	0.00%	16.67%	0.00%	0.00%	0.00%	100.00%
+A	no-call-snp	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%	0.00%	0.00%	100.00%
+A	total	29.79%	38.30%	14.89%	6.38%	4.26%	0.00%	2.13%	2.13%	2.13%	0.00%	0.00%	100.00%
+
+Locus stats for file B by pct of LocusClassification
+File	LocusClassification	alt-identical	ploidy-mismatch;ploidy-mismatch	ref-identical;alt-identical	alt-consistent	alt-identical;alt-identical	ploidy-mismatch	phase-mismatch;phase-mismatch	alt-identical;onlyA	ref-consistent;onlyA	ref-identical;onlyB	other	total
+B	hap-del	50.00%	0.00%	0.00%	0.00%	0.00%	50.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	hap-ins	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	hap-snp	85.71%	0.00%	0.00%	0.00%	0.00%	14.29%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	het-del	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	het-ins	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	het-snp	0.00%	0.00%	71.43%	0.00%	0.00%	0.00%	0.00%	14.29%	0.00%	14.29%	0.00%	100.00%
+B	hom-ins	0.00%	0.00%	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	hom-snp	0.00%	0.00%	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	no-call-no-call	0.00%	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	no-call-no-call-ri	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	100.00%	0.00%	0.00%	0.00%	0.00%	100.00%
+B	total	46.67%	0.00%	23.33%	3.33%	6.67%	10.00%	3.33%	3.33%	0.00%	3.33%	0.00%	100.00%
+
+Locus stats for file A by count
+File	LocusClassification	alt-identical	ploidy-mismatch;ploidy-mismatch	ref-identical;alt-identical	alt-consistent	alt-identical;alt-identical	ploidy-mismatch	phase-mismatch;phase-mismatch	alt-identical;onlyA	ref-consistent;onlyA	ref-identical;onlyB	other	total
+A	hap-del	1	0	0	1	0	0	0	0	0	0	0	2
+A	hap-ins	1	0	0	1	0	0	0	0	0	0	0	2
+A	hap-snp	12	0	0	0	0	0	0	0	0	0	0	12
+A	hap-sub	0	0	0	1	0	0	0	0	0	0	0	1
+A	het-del	0	0	1	0	0	0	0	0	0	0	0	1
+A	het-ins	0	0	1	0	0	0	0	0	0	0	0	1
+A	het-snp	0	13	5	0	0	0	0	0	0	0	0	18
+A	het-sub	0	0	0	0	0	0	1	0	0	0	0	1
+A	hom-ins	0	1	0	0	1	0	0	0	0	0	0	2
+A	hom-snp	0	4	0	0	1	0	0	1	0	0	0	6
+A	no-call-snp	0	0	0	0	0	0	0	0	1	0	0	1
+A	total	14	18	7	3	2	0	1	1	1	0	0	47
+
+Locus stats for file B by count
+File	LocusClassification	alt-identical	ploidy-mismatch;ploidy-mismatch	ref-identical;alt-identical	alt-consistent	alt-identical;alt-identical	ploidy-mismatch	phase-mismatch;phase-mismatch	alt-identical;onlyA	ref-consistent;onlyA	ref-identical;onlyB	other	total
+B	hap-del	1	0	0	0	0	1	0	0	0	0	0	2
+B	hap-ins	1	0	0	0	0	0	0	0	0	0	0	1
+B	hap-snp	12	0	0	0	0	2	0	0	0	0	0	14
+B	het-del	0	0	1	0	0	0	0	0	0	0	0	1
+B	het-ins	0	0	1	0	0	0	0	0	0	0	0	1
+B	het-snp	0	0	5	0	0	0	0	1	0	1	0	7
+B	hom-ins	0	0	0	0	1	0	0	0	0	0	0	1
+B	hom-snp	0	0	0	0	1	0	0	0	0	0	0	1
+B	no-call-no-call	0	0	0	1	0	0	0	0	0	0	0	1
+B	no-call-no-call-ri	0	0	0	0	0	0	1	0	0	0	0	1
+B	total	14	0	7	1	2	3	1	1	0	1	0	30
+

@@ -1,0 +1,16 @@
+#ASSEMBLY_ID	asmId
+#CGATOOLS_VERSION	0.0.0
+#FORMAT_VERSION	2.2
+#GENERATED_AT	2012-Sep-27 14:23:44.329508
+#GENERATED_BY	cgatools
+#REPMASK_GENERATED_AT	2010-Dec-01 13:43
+#SOFTWARE_VERSION	1.5.0
+#TYPE	VAR-OLPL
+
+>locus	ploidy	chromosome	begin	end	zygosity	varType	reference	allele1Seq	allele2Seq	allele1VarScoreVAF	allele2VarScoreVAF	allele1VarScoreEAF	allele2VarScoreEAF	allele1VarFilter	allele2VarFilter	allele1HapLink	allele2HapLink	allele1XRef	allele2XRef	allele1Freq	allele2Freq	allele1AlternativeCalls	allele2AlternativeCalls	repeatMasker
+1	2	chr1	0	500	no-call	no-ref	=	?	?															
+2	2	chr1	500	1203	no-call	PAR-called-in-X	=	?	?															
+13	2	chr1	1203	1204	hom	snp	C	T	T	101	121	101	121					rsABC	rsCDE;rsFGH					TAR1:telo:23.1
+14	2	chr1	1204	2335	no-call	complex	=	?	?															
+17	2	chr1	2335	2336	hom	snp	G	A	A	120	120	120	120					rsVW;rsXYZ	rsVW;rsXYZ					
+18	2	chr1	2336	7000	no-call	no-ref	=	?	?															
